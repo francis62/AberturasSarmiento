@@ -1,0 +1,129 @@
+body{
+	font-weight: 600;
+}
+
+.iconMain{
+    max-height: 4.5rem !important;
+}
+
+.controlPaddingFooter{
+	padding-bottom: 0rem !important;
+	background-color: #F13943;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 750;
+	color: black;
+}
+
+.controlPaddingNavbar{
+	padding-bottom: 0rem !important;
+}
+
+.paddingHome{
+	padding-top: 23px;
+	padding-right: 20px;
+}
+
+.paddingEmpresa{
+	padding-top: 23px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.paddingProducts{
+	padding-top: 23px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.paddingContact{
+	padding-top: 23px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.iconMainLetras{
+	padding-top: 1rem;
+	max-height: 4rem !important;
+	padding-left: 0.5rem;
+}
+
+.icon{
+	color: #2e2e2e;
+}
+
+.controlIcon{
+	padding-right: 21px;
+	padding-top: 5px;
+}
+
+.controlIconFacebook{
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.float{
+	position: fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: #25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align: center;
+    font-size: 37px;
+	box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.sectionCarousel{
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.firstImage{
+	opacity: 0.75;
+}
+
+.secondImage{
+	opacity: 0.75;
+}
+
+.thirdImage{
+	opacity: 0.75;
+}
+
+.iconChat{
+	color: black;
+	margin-right: 100px;
+	font-size: 50px;
+}
+
+.iconTool{
+	color: black;
+	margin-right: 100px;
+	font-size: 50px;
+}
+
+.iconPencil{
+	color: black;
+	font-size: 50px;
+}
+
+.controlEmpresaButton{
+	padding-left:150px ;
+}
+
+.columns{
+	margin-top: 100px;
+}
+
+.boxLeft{
+	margin-left: 150px;
+	margin-right: 0px;
+}
+
+.boxRight{
+	margin-left: 150px;
+
+}
