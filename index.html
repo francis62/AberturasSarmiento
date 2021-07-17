@@ -4,11 +4,14 @@
         <meta charset="utf-8"/>
         <title>Aberturas Sarmiento S.A</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-
+      
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
         <link href="~bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+
 
         <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -25,24 +28,24 @@
                 <div class="navbar-start">
                     <div class="navbar-item">
                         <div class="field is-grouped">
-                            <p class="control">
+                            <p class="controlCall">
                                 <span class="icon">
                                     <i class="fas fa-phone-square" aria-hidden="true"></i>
                                 </span>
                                 <span>  +54 9 261 750-1072  |</span>
                             </p>
 
-                            <p class="control">
+                            <p class="controlEmail">
                                 <span class="icon">
                                     <i class="fas fa-envelope" aria-hidden="true"></i>
                                 </span>
                                 <span>  ventas@aberturassarmiento.com  |</span>
                             </p>
-                            <p class="control">
+                            <p class="controlUbication">
                                 <span class="icon">
                                     <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                                 </span>
-                                <span>  Carril Sarmiento 2957  |</span>
+                                <span>  Sarmiento 2957, Luzuriaga, Mendoza  |</span>
                             </p>
                         </div>
                     </div>
@@ -51,14 +54,14 @@
                 <div class="navbar-end" >
                     <div class="navbar-item">
                         <div class="field is-grouped">
-                            <a class="controlIcon">
-                                <span class="icon" style="font-size: xx-large;" href="https://www.instagram.com" target="_blank">
+                            <a class="controlIconInstagram" href="https://www.instagram.com/" target="_blank">
+                                <span class="icon">
                                     <i class="fab fa-instagram-square" aria-hidden="true"></i> 
                                 </span>
                             </a>
 
-                            <a class="controlIconFacebook">
-                                <span class="icon" style="font-size: xx-large;" href="https://www.facebook.com" target="_blank">
+                            <a class="controlIconFacebook" href="https://www.facebook.com" target="_blank">
+                                <span class="icon">
                                     <i class="fab fa-facebook-square" aria-hidden="true"></i>
                                 </span>
                             </a>
@@ -67,152 +70,475 @@
                 </div>
             </div>
         </footer>
+        <!--<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">-->
+        <nav class="navbar">
 
-        <section class="controlPaddingNavbar">   
-            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="https://aberturassarmiento.com/"> 
-                        <img src="images/icono.jpg" class="iconMain">  <img src="images/logoLetras.jpeg" class="iconMainLetras">
-                    </a>
+            <a href="https://aberturassarmiento.com/"> 
+                <img src="images/Logo/LOGO GRIS(sin fondo) (2).png " class="iconMain"><!--  <img src="images/Logo/logoLetras.jpeg" class="iconMainLetras">-->
+            </a>
+            
+            <div class="navbar-end" id="navbar">
+              <i class="fas fa-times" onclick="hiddenMenu()"></i>
+                <ul>
+                  <li><a href="index.html" style="color: #F13943;">HOME</a></li>
+                  <li><a href="empresa.html">EMPRESA</a></li>
+                  <li><a href="productos.html">PRODUCTOS</a></li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+              
+            </div>
+          <i class="fas fa-bars" onclick="showMenu()"></i>  
+        </nav>
 
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                
-                <div class="navbar-end">
-                    <p class="paddingHome">
-                      <a class="navbar-item">
-                          Home                           
-                      </a>
-                    </p>  
+
+
+
+<!-------------------------START Slideshow firstOne-------------------------->
+<!--
+<div class="image-slideshow">
+	<div>
+    	<img src="images/Aberturas/1920x1000/pexels-expect-best-323781 - Copy.jpg" width="1000" height="600" alt="">
+        <div>
+        	<h2 class="textImage">Excelencia en aberturas</h2>
+        </div>
+    </div>
+	<div>
+    	<img src="images/Aberturas/1920x1000/pexels-linkedin-sales-navigator-1251842.jpg" width="1000" height="600" alt="">
+        <div>
+        	<h2>Excelencia en aberturas</h2>
+        </div>
+    </div>
+	<div>
+    	<img src="images/Aberturas/1920x1000/pexels-max-vakhtbovych-6527069 (1).jpg" width="1000" height="600" alt="">
+        <div>
+        	<h2>Excelencia en aberturas</h2>
+        </div>
+    </div>
+</div>
+-->
+
+<!-------------------------FINISH Slideshow firstOne-------------------------->
+
+
+
+
+
+<!-------------------START slideshow secondOne(W3)----------------->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-6527069 (1).jpg" style="width:100%">
+    <!--<p class="subtitle is-2 textImage">-->
+    <p class="textImage">
+      Excelencia en aberturas
+    </p>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/Aberturas/1920x700/pexels-pixabay-209245.jpg" style="width:100%">
+    <p class="textImage">
+      Excelencia en aberturas
+    </p>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="images/Aberturas/1920x700/pexels-skylar-kang-6045336.jpg" style="width:100%">
+    <p class="textImage">
+      Excelencia en aberturas
+    </p>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+
+<!-------------------FINISH slideshow secondOne(W3)----------------->
+
+
+
+  
+    <section class="sectionTwo">
+      <div class="row-One">
+        <div class="column-One left-One">
+          <h3 class="subtitle is-3 one">
+            Somos una empresa dedicada a la fabricacion e instalacion de aberturas de aluminio.
+            <div class="separator  small right"></div>
+          </h3>
+          <br>
+          <h4 class="subtitle is-4 one">
+            Nuestro equipo se encarga de satisfacer las necesidades del cliente, tanto en la entrega
+            del producto como en la instalacion del mismo.
+          </h4>
+          <br>
+          <h4 class="subtitle is-4 one">
+            Ademas queremos brindar un asesoramiento totalmente personalizado en sistemas de aberturas.
+          </h4>       
+        </div>
+
+        <div class="column-One right-One">
+          <img class="imageRowIso" src="images/Logo/LOGO GRIS(sin fondo) (3).png" style="text-align: center;">
+        </div>     
+      </div>
+    </section>
+    
+    <section class="sectionTwo">
+      <div class="row-Two" style="background-color: #2e2e2e;">
+        <div class="column-Two" style="color: white; text-align: center;">
+          <h5 class="has-text-white subtitle is-4 two" style="margin-bottom: 2%;">
+            <span class="iconChat">
+              <i class="fas fa-comments"></i> 
+            </span>
+            Atencion integral
+          </h5>
+          <div class="separator  small left-Two"></div>
+          <div class="attentionText">
+            <h6 class="has-text-white has-text-centered subtitle is-5 two"> 
+              Queremos brindarte una atencion totalmente personalizada e integral
+              para poder satisfacer todo tipo de necesidades a la hora de brindarte
+              nuestro servicio.
+            </h6>
+          </div>
+        </div>
+        <div class="column-Two" style="color: white; text-align: center;">
+          <h5 class="has-text-white subtitle is-4 two" style="margin-bottom: 2%;">
+            <span class="iconDoor">
+              <i class="fas fa-door-open"></i> 
+            </span>
+            Productos de calidad
+          </h5>
+          <div class="separator  small left-Two"></div>
+  
+          <div class="productsText">
+            <h6 class="has-text-white has-text-centered subtitle is-5 two">
+              Día a día nuestro equipo trabaja con excelentes materiales y estamos al tanto de
+              todas las nuevas tecnologias que salen al mercado para poder traer lo mejor.
+            </h6>
+          </div>
+        </div>
+        <div class="column-Two" style="color: white; text-align: center;">
+          <h5 class="has-text-white subtitle is-4 two" style="margin-bottom: 2%;">
+            <span class="iconTools">
+              <i class="fas fa-tools"></i> 
+            </span>
+            Mantenimiento tecnico
+          </h5>
+          <div class="separator  small left-Two"></div>
+          <div class="maintenanceText">
+            <h6 class="has-text-white has-text-centered subtitle is-5 two">
+              Ofrecemos además un servicio de mantenimiento para que puedas
+              tener todos las prestaciones en un solo lugar, donde nos encargamos de realizar
+              lo mejor posible.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="sectionThird">
+      <div class="row-Third" style="background-color: white;">
+        <div class="column-Third left-Third">
+          <h4 class="subtitle is-4 third">
+            <strong>Acercate a nuestro showroom</strong> para conocer todos nuestros productos y apreciar la calidad de cerca.
+            <div class="separator  small left-Third"></div>
+          </h4>
+        </div>
+
+        <div class="column-Third right-Third">
+          <img  class="imageShowroom" src="images/Aberturas/as new/highwork (2).jpg">
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      
+      <p class="subtitle is-1 form" style="color: white;">Enviános tu consulta</p>
+
+      <div class="field is-horizontal">
+        <div class="field">
+          <label class="label" style="color: white;">Nombre</label>
+
+          <div class="control has-icons-left">
+            <input class="input" type="text" placeholder="Nombre">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
                         
-                    <p class="paddingEmpresa">
-                      <a class="navbar-item">
-                          Empresa                           
-                      </a>
-                    </p>
+        <div class="fieldSurname">
+          <label class="label" style="color: white;">Apellido</label>
 
-                    <p class="paddingProducts">
-                      <a class="navbar-item">
-                          Productos                           
-                      </a>
-                    </p>
-
-                    <p class="paddingContact">
-                      <a class="navbar-item">
-                          Contacto                           
-                      </a>
-                    </p>
-                </div>
-            </nav>
-        </section>
-
-        <section class="sectionCarousel">
-			<div class="container">                
-				<div id="carousel-demo" class="carousel" data-infinite="false" >
-					<div class="firstImage">
-                        <img src="images/imagenPrueba.png">              
-					</div>
-
-					<div class="secondImage">
-                        <img src="images/imagenPrueba2.png">                    
-					</div>
-
-					<div class="thirdImage">
-                        <img src="images/imagenPrueba3.png">                   
-					</div>
-				</div>
-			</div>
-		</section>
-
-        <div class="columns">
-            <div class="column is-narrow">
-              <div class="boxLeft" style="width: 425px;">
-                <p class="title is-3">Calidad en aberturas</p>
-
-                <br>
-                
-                <a class="iconChat">
-                    <i class="fas fa-comments"></i> 
-                </a>
-                
-                <a class="iconTool">
-                    <i class="fas fa-tools"></i>
-                </a>
-                
-                <a class="iconPencil">
-                    <i class="fas fa-pencil-ruler"></i>
-                </a>
-               
-                <br><br><br>
-                
-
-                <div class="content">
-                    Ofrecemos una atencion personalizada e integral
-                    para poder brindarte la mayor calidad y experiencia
-                    en aberturas. Puede conocer un poco mas de nuestra
-                    empresa aqui.
-                </div><br>
-
-                    <div class="controlEmpresaButton">
-                        <button class="button is-dark" >Empresa</button>
-                        <!--cambira boton para que redireccione a la parte de empresa-->
-                    </div><br><br>
-                    
-                <div class="content">
-                    Acercate a nuestra sucursal ubicada en
-                    Carril Sarmiento o contactate con nosotros
-                    completando el formulario.
-                </div>
-              </div>
+            <div class="control is-expanded has-icons-left">
+              <input class="input" type="text" placeholder="Apellido">
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
             </div>
 
-            <div class="column is-narrow">
-              <div class="boxRight">
-                <p class="title is-4">Completa este formulario</p>
+        </div>
 
-                <div class="field">
+      </div>
+
+      <div class="field">
+        <div class="field">
+          <label class="label" style="color: white;">Email</label>
+          <div class="control has-icons-left">
+            <input class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+          </div>
+        </div>
+        </br>
+        <div class="field">
+          <label class="label" style="color: white;" >Seleccione la categoría de su interés</label>
+          <div class="control">
+            <div class="select">
+              <select id="select">
+                <option disabled="disabled" selected="selected">Ver opciones</option>
+                <option>Pregunta general</option>
+                <option>Abertura de aluminio</option>
+                <option>Duda sobre materiales</option>
+                <option>Colores para las aberturas</option>
+                <option>Tipo de aberturas disponibles</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      </br>
+      <div class="field-body">
+        <div class="field">
+          <label class="label" style="color: white;">Escriba su consulta</label>
+          <div class="control is-expanded">
+            <textarea class="textarea" placeholder="Escriba aqui..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="controlSend">
+          <button class="button send">Enviar</button>
+        </div>
+        <div class="controlCancel">
+          <button class="button is-light">Cancelar</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="footerLast">
+      <div class="row-Footer">
+
+        <div class="column-Footer logoAS left">
+          <img class="logoAS" src="images/Logo/LOGO GRIS(sin fondo) (1).png">
+        </div>
+  
+        <div class="column-Footer contactAS middle">
+
+          <div class="row-Middle">
+            <div class="column-Middle">
+              <p class="title is-4 middle"><i class="fas fa-map-marker-alt"></i>  Visitanos</p><div class="separator  small left-Fourth"></div>
+              <p class="title is-6 middle">  Sarmiento 2957, Luzuriaga, Mendoza</p>
+
+              <p class="title is-4 middle rightPosition"><i class="fas fa-clock"></i>  Horario de atención</p><div class="separator  small left-Fourth rightPosition"></div>
+              <p class="title is-6 middle rightPosition">  Lunes a Viernes: 09:00 - 18:00hs</p>  
+              <p class="title is-6 middle rightPosition">Sabados: 09:00 - 13:00hs</p>
+            </div>
+
+            <div class="column-Middle">
+              <p class="title is-4 middle"><i class="fas fa-phone"></i>  Llamanos</p><div class="separator  small left-Fourth"></div>
+              <p class="title is-6 middle">  +54 9 2617 50-1072</p>
+
+              <p class="title is-4 middle rightPosition"><i class="fas fa-envelope"></i>  Correo</p><div class="separator  small left-Fourth rightPosition"></div>
+              <p class="title is-6 middle rightPosition sells">  ventas@aberturassarmiento.com</p>
+            </div>
+          </div>
+          <!--<p class="has-text-centered subtitle is-6">Diseñado por STONHET</p>-->
+        </div>
+  
+        <div class="column-Footer socialmediaAS right">
+          <p class="title is-4 middle socialMedia">Nuestras redes sociales</p>
+          <div class="separator  small left-Media"></div>
+
+          <div class="socialMedia">
+            <p class="title is-6 Inst">
+              <a class="controlMediaInstagram" href="https://www.instagram.com/" target="_blank">
+                <span class="iconInstagram">
+                  <i class="fab fab fa-instagram-square" aria-hidden="true"></i>
+                </span>
+              </a>
+              <a href="https://www.instagram.com/">instagram.com/aberturassarmiento</a>
+            </p>
+            
+            <p class="title is-6 Face">
+              <a class="controlMediaFacebook" href="https://www.facebook.com/" target="_blank">
+                <span class="iconFacebook">
+                  <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                </span>
+              </a>
+              <a href="https://www.facebook.com/">facebook.com/aberturassarmiento</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+    <!--
+        <a id="backToTop" href="#" class="on">
+          <span class="fa-stack">
+            <i class="far fa-arrow-alt-circle-up"></i>
+          </span>
+        </a>
+      -->
+
+    <a href="https://wa.me/5492617501072?text=Hola%20Aberturas%20Sarmiento,%20estoy%20interesado%20en%20realizar%20unas%20aberturas%20con%20ustedes." class="float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="firstProject.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+
+    <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+
+        
+		<script>
+		bulmaCarousel.attach('#carousel-demo', {
+			slidesToScroll: 1,
+			slidesToShow: 1
+		});
+		</script>
+    </body>
+</html>
+
+
+
+
+<!--
+    <div class="row">
+      <div class="column leftSecond">
+        <h3 class="subtitle is-3" style="color: #f13943;">
+          Nos comprometemos arduamente con el cliente
+        </h3>
+      </div>
+
+      <div class="column rightSecond">
+        <img class="imagenContainerFirst" src="images/Aberturas/aluminium-windows-top-min.jpg">
+      </div>     
+    </div>
+-->
+
+
+<!--
+    <section class="section">
+      <div class="containerFirst">
+        <div class="container">
+          <p>
+            <h1 class="boxFirst">
+              Somos una empresa destinada a la fabricacion e instalacion de aberturas de aluminio y PVC.
+              Nuestro equipo se encarga de satisfacer las necesidades del cliente , tanto en la entrega
+              del producto como en la instalacion del mismo.
+            </h1>
+          </p>  
+          <img class="imagenContainerFirst" src="images/Aberturas/aluminium-windows-top-min.jpg">
+        </div>
+      </div>
+    </section>
+-->
+<!--
+      <div class="columns">
+        <div class="column"> -->
+          <!--Le saque esto al boxLeft ->style="width: 425px;"   -->
+<!--       <div class="boxLeft">
+            <p class="title is-3">Calidad en aberturas</p>
+
+            <br>
+          
+            <a class="iconChat">
+                <i class="fas fa-comments"></i> 
+            </a>
+            
+            <a class="iconTool">
+                <i class="fas fa-tools"></i>
+            </a>
+            
+            <a class="iconPencil">
+                <i class="fas fa-pencil-ruler"></i>
+            </a>
+          
+            <br><br><br>
+            
+
+            <div class="content">
+                Ofrecemos una atencion personalizada e integral
+                para poder brindarte la mayor calidad y experiencia
+                en aberturas. Puede conocer un poco mas de nuestra
+                empresa aqui.
+            </div><br>
+
+            <div class="controlEmpresaButton">
+                <button class="button is-dark" >Empresa</button>
+                <!--cambira boton para que redireccione a la parte de empresa-->
+<!--        </div><br><br>
+                    
+            <div class="content">
+              Acercate a nuestra sucursal ubicada en
+              Carril Sarmiento o contactate con nosotros
+              completando el formulario.
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="boxRight">
+            <!--<div class="distintive">-->
+<!--           <p class="title is-4" style="color:white;">Completa este formulario</p>
+                <div class="field is-horizontal">
+                  <div class="field">
                     <label class="label">Nombre</label>
                     <div class="control">
                       <input class="input" type="text" placeholder="Ingresar Nombre">
                     </div>
                   </div>
-                  
-                  <div class="field">
+                                  
+                  <div class="fieldSurname">
                     <label class="label">Apellido</label>
-                    <div class="control has-icons-left has-icons-right">
+                    <div class="control is-expanded has-icons-left">
                       <input class="input" type="text" placeholder="Ingresar Apellido">
                       <span class="icon is-small is-left">
                         <i class="fas fa-user"></i>
                       </span>
                     </div>
                   </div>
-                  
+                </div>
+
+                <div class="field">
                   <div class="field">
                     <label class="label">Email</label>
-                    <div class="control has-icons-left has-icons-right">
-                      <input class="input" type="email" placeholder="Ingresar Email" >
+                    <div class="control has-icons-left">
+                      <input class="input" type="email" placeholder="Ingresar Email">
                       <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                       </span>
-                      <!--
-                      <span class="icon is-small is-right">
-                        <i class="fas fa-exclamation-triangle"></i>
-                      </span>
-                    </div>
-                    <p class="help is-danger">This email is invalid</p>
-                    -->
                   </div>
-                  
+                  </br>
                   <div class="field">
                     <label class="label">Seleccione la categoria de su interes</label>
                     <div class="control">
                       <div class="select">
-                        <select>
-                          <option>Ver opciones</option>
+                        <select id="select">
+                          <option disabled="disabled" selected="selected">Ver opciones</option>
                           <option>Pregunta general</option>
                           <option>Abertura de aluminio</option>
                           <option>2</option>
@@ -222,47 +548,71 @@
                       </div>
                     </div>
                   </div>
-                  
+                </div>
+                </br>
+                <div class="field-body">
                   <div class="field">
                     <label class="label">Escriba su consulta</label>
-                    <div class="control">
+                    <div class="control is-expanded">
                       <textarea class="textarea" placeholder="Consulta"></textarea>
                     </div>
                   </div>
-                  
-                  
-                  <div class="field is-grouped">
-                    <div class="control">
-                      <button class="button is-dark">Enviar</button>
-                    </div>
-                    <div class="control">
-                      <button class="button is-light">Cancelar</button>
-                    </div>
-                  </div>
+                </div>
+            <!--</div>-->
 
-              </div>
-            </div>
+                    <!--                    
+                    <div class="field">
+                      <label class="label">Email</label>
+                      <div class="control is-expanded has-icons-left has-icons-right">
+                        <input class="input" type="email" placeholder="Ingresar Email" >
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <!--
+                        <span class="icon is-small is-right">
+                          <i class="fas fa-exclamation-triangle"></i>
+                        </span>
+                      </div>
+                      <p class="help is-danger">This email is invalid</p>
+                      -->
+                    <!--</div>-->
+                    <!--
+                    <div class="field">
+                      <label class="label">Seleccione la categoria de su interes</label>
+                      <div class="control">
+                        <div class="select">
+                          <select>
+                            <option>Ver opciones</option>
+                            <option>Pregunta general</option>
+                            <option>Abertura de aluminio</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="field">
+                      <label class="label">Escriba su consulta</label>
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Consulta"></textarea>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="field is-grouped">
+                      <div class="control">
+                        <button class="button is-dark">Enviar</button>
+                      </div>
+                      <div class="control">
+                        <button class="button is-light">Cancelar</button>
+                      </div>
+                    </div>
+                  -->
+                  <!--
+          </div> 
         </div>
-
-        <a href="https://web.whatsapp.com" class="float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-
-        <script src="firstProject.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-
-        <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
-
-        
-		<script>
-		bulmaCarousel.attach('#carousel-demo', {
-			slidesToScroll: 1,
-			slidesToShow: 1
-		});
-		</script>
-        
-
-    </body>
-</html>
-
+      </div>
+      -->
+      <!--

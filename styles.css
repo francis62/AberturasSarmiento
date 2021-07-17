@@ -1,66 +1,265 @@
+
 body{
 	font-weight: 600;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*----------RESPONSIVNESS----------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+/*
+.img{
+	width: 100%;
+}
+/*
+@media only screen and (min-width: 768px){
+	.controlPaddingFooter{
+		width: 100%;
+	}
+
+	.img{
+		display: block;
+		width: 100%;
+	}
+}
+*/
+
+
+
+/* Media Queries: Tablet Landscape 
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
 }
 
+/* Media Queries: Tabled Portrait 
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+img { max-width: 100%; height: auto; }
+
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+/*@media (min-width:960px) { body {font-size:1.2rem;} } */
+/*@media (min-width:1100px) { body {font-size:1.5rem;} } */
+
+/*----------ISOTIPO DEL NAVBAR----------
 .iconMain{
     max-height: 4.5rem !important;
 }
 
-.controlPaddingFooter{
-	padding-bottom: 0rem !important;
-	background-color: #F13943;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: 750;
-	color: black;
-}
-
-.controlPaddingNavbar{
-	padding-bottom: 0rem !important;
-}
-
-.paddingHome{
-	padding-top: 23px;
-	padding-right: 20px;
-}
-
-.paddingEmpresa{
-	padding-top: 23px;
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-.paddingProducts{
-	padding-top: 23px;
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
-.paddingContact{
-	padding-top: 23px;
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
+/*----------LETRAS DEL LOGO DEL NAVBAR----------
 .iconMainLetras{
 	padding-top: 1rem;
 	max-height: 4rem !important;
 	padding-left: 0.5rem;
 }
-
-.icon{
-	color: #2e2e2e;
+*/
+/*----------ICONO DE LLAMADA DEL FOOTER----------*/
+.controlCall{
+	color: #363636 !important; 
+	padding-top: 0px ;
+	padding-bottom: 0px;
 }
 
-.controlIcon{
+/*----------ICONO DEL CORREO DEL FOOTER----------*/
+.controlEmail{
+	color: #363636 !important;
+	padding-top: 0px ;
+	padding-bottom: 0px;
+}
+
+/*----------ICONO DE LA UBICACION (PIN) EN LE FOOTER----------*/
+.controlUbication{
+	color: #363636 !important;
+	padding-top: 0px ;
+	padding-bottom: 0px;
+}
+
+/*----------ICONO DE INSTAGRAM EN EL FOOTER----------*/
+.controlIconInstagram{
 	padding-right: 21px;
-	padding-top: 5px;
+	padding-top: 0px ;
+	padding-bottom: 0px;
+	color: #363636 !important;
+	font-size: xx-large;
 }
 
+/*----------ICONO DE FACEBOOK EN EL FOOTER----------*/
 .controlIconFacebook{
-	padding-top: 5px;
 	padding-right: 10px;
+	padding-top: 0px ;
+	padding-bottom: 0px;
+	color: #363636 !important;
+	font-size: xx-large;
 }
 
+/*----------LAYOUT DEL FOOTER----------*/
+.controlPaddingFooter{
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	background-color: #F13943;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 640;
+	width: 100%;
+	min-height: 0vh;
+	/*En celulares directamente saco el footer y para que puedan ver los contactos se tienen
+	que redireccionar a la parte de contacto dentro de la navbar*/
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+/*----------LAYOUT DEL NAVBAR----------*/
+.navbar{
+	padding-bottom: 0rem !important;
+	font-weight: 600;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.iconMain{
+	min-height: 64px;
+	max-height: 65px;
+	padding-left: 5%;
+}
+
+/*----------LAYOUT DE LOS LINKS DENTRO DEL NAVBAR------------*/
+.navbar-end{
+	flex: 1;
+	text-align: right;
+}	
+
+/*----------LAYOUT DE TODOS LOS PARRAFOS DENTRO DEL NAVBAR (<p></p>)------------*/
+/*.navbar-end .p*/
+.navbar-end ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 29px 28px;
+	position: relative;
+}
+.navbar-end ul li a{
+	color: #363636;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+
+/*.navbar-end .p::after*/
+.navbar-end ul li::after {
+	content: '' ;
+	width: 0% ;
+	height: 2px ;
+	background: #F13943 ; 
+	display: block ;
+	margin: auto ;
+	transition: 0.5s;
+}
+
+.navbar-end ul li:hover::after{
+	width: 100%;
+
+}
+
+.navbar .fas{
+	display: none;
+}
+
+
+/*--------------------------PARTE DE RESPONSIVENESS------------------------------*/
+@media(max-width: 700px){
+
+	.iconMain{
+		padding-right: 0px !important;
+		margin-right: 0px !important; 
+	}
+
+	.navbar-end ul li{
+		display: block;
+		
+	}
+
+	.navbar-end ul li a{
+		color: #2e2e2e !important;
+	}
+
+	.navbar-end{
+		position: absolute;
+		background: #F13943;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+
+	.navbar .fas{
+		display: block;
+		color: #2e2e2e;
+		margin: 10px;
+		font-size: 22px;
+		text-align: left;
+	}
+
+	.navbar-end ul{
+		padding: 30px;
+	}
+
+}
+
+/*----------LAYOUT DEL TEXTO/BOTON HOME----------
+.paddingHome{
+	padding-top: 23px;
+	/*padding-right: 20px;
+	text-decoration: none;
+}
+
+/*----------LAYOUT DEL TEXTO/BOTON EMPRESA----------
+.paddingEmpresa{
+	padding-top: 23px;
+	/*padding-right: 20px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+
+/*----------LAYOUT DEL TEXTO/BOTON PRODUCTOS----------
+.paddingProducts{
+	padding-top: 23px;
+	/*padding-right: 20px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+
+/*----------LAYOUT DEL TEXTO/BOTON CONTACTO----------
+.paddingContact{
+	padding-top: 23px;
+	/*padding-right: 20px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+*/
+/*----------LAYOUT DEL BOTON DE WHATSAPP----------*/
 .float{
 	position: fixed;
 	width:60px;
@@ -76,54 +275,1074 @@ body{
     z-index: 100;
 }
 
-.sectionCarousel{
-	margin-top: 0px;
-	padding-top: 0px;
+/*-------------------START slideshow firstOne------------------------------*/
+/*
+.image-slideshow {
+	width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    position: relative;
+}
+.image-slideshow > div {
+	width: 1000px;
+    height: 600px;
+	animation: move 15s ease-in-out 2s infinite alternate;
+    display:inline-block;
+}
+.image-slideshow > div div {
+	position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
 }
 
-.firstImage{
+.textImage {
+	padding: 15px;
+    margin: 0;
+    font-size: 18px;
+    color: #f9f9f9;
+}
+
+@keyframes move {
+	0%,30% { transform: translateX(0); }
+   	40%,70% { transform: translateX(-1000px); }
+   	80%,100% { transform: translateX(-2000px); }
+}
+
+*/
+/*-------------------FINISH slideshow firstOne-------------------------------*/
+
+
+
+
+
+/*-------------------START slideshow secondOne(W3)-----------------*/
+
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+
+img {vertical-align: middle;}
+
+/*----------Slideshow container----------*/
+.slideshow-container {
+  max-width: 1900px;
+  position: relative;
+  margin: auto;
+}
+
+/*----------BOTONES DE ANTERIOR Y POSTERIOR----------*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*---------- LAYOUT DEL BOTON DE POSTERIOR ----------*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*----------LAYOUT DEL TEXTO ----------*/
+.textImage {
+  background-color: #363636;
+  color: white;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.75;
+}
+
+/*----------- LOS PUNTOS INDICADORES DE IMAGEN -----------*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*---------- ANIMACION ----------*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*---------- EN PANTALLAS MAS CHICAS DISMINUIR EL TAMAÑO DEL TEXTO ----------*/
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+   
+}
+
+@media(max-width: 700px){
+	.textImage{
+		font-size: 15px;
+	}
+
+	.slideshow-container {
+		max-width: 700px;
+	}
+}
+
+
+/*-------------------FINISH SLIDESHOW-----------------*/
+
+
+/*----------ACA EMPIEZA LA PRIMER COLUMNA ----------*/
+.row-One{
+	display: flex;
+	justify-content: space-between;
+}
+
+.column-One{
+	float: left;
+	padding: 10px;
+	padding-bottom: 150px;
+}
+
+.row-One:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*----------LAYOUT CONTENIDO DEL BLOQUE IZQUIERDO ----------*/
+.left-One {
+	width: 60%;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background-color: white;
+}
+
+/*----------LINEA DIVISORA DE LA PRIMER COLUMNA ----------*/
+.separator.small.right{
+	background-color: #f13943;
+	height: 6px;
+	width: 150px;
+	margin-top: 15px;
+}
+
+/*----------LAYOUT CONTENIDO DEL BLOQUE DERECHO ----------*/
+.right-One {
+	width: 40%;
+	padding-top: 150px;
+	padding-bottom: 235px;
+	background-color: white;
+}
+
+/*----------ISOTIPO DENTRO DE LA SEGUNDA COLUMNA ----------*/
+.imageRowIso{
+	/*
+	max-width: 35rem;
+	padding-left: 55px;
+	margin-left: 20px;
+	
+	
+	padding: 5%;
+	display:table-cell;
+    text-align:center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	*/
 	opacity: 0.75;
 }
 
-.secondImage{
-	opacity: 0.75;
+@media(max-width: 1366px){
+	.imageRowIso{
+		width: 80%;
+	}
+
+	.right-One{
+		padding-left: 5%;
+	}
 }
 
-.thirdImage{
-	opacity: 0.75;
+/*----------PARTE DE RESPONSIVIDAD DE LA PRIMERA COLUMNA*/
+@media(max-width: 700px){
+	
+	.row-One{
+		flex-direction: column;
+	}
+
+	.column-One{
+		width: 100%;
+	}
+
+	.left-One{
+		width: 100%;
+		text-align: center;
+		padding-top: 5%;
+		padding-bottom: 0%;
+		margin-bottom: 0%;
+	}
+
+	.subtitle.is-3.one{
+		font-size: 40px;
+	}
+
+	.separator.small.right{
+		background-color: #f13943;
+		height: 6px;
+		width: 55%;
+		margin-top: 15px;
+		margin-left: 22%;
+	}
+
+	.subtitle.is-4.one{
+		font-size: 30px;
+	}
+	
+	.right-One {
+		width: 100%;
+		padding-top: 6%;
+		padding-bottom: 25%;
+	}
+
+	.imageRowIso{
+		width: 100%;
+	}
 }
 
+/*----------ACA EMPIEZA LA SEGUNDA COLUMNAA ----------*/
+.row-Two{
+	display: flex;
+}
+
+.column-Two{
+	float: left;
+	width: 33.33%;
+	padding-top: 2%;
+	padding-bottom: 4%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.row-Two:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*----------LINEA DIVISORA DE ATENCION INTEGRAL ----------*/
+.separator.small.left-Two{
+	background-color: white;
+	height: 3px;
+	width: 150px;
+	margin-left: 36%;
+	padding-top: 0%;
+	margin-top: 0.1%;
+	margin-bottom: 7%;
+}
+
+
+/*----------LAYOUT DE ICONO DE ATENCION INTEGRAL ----------*/
 .iconChat{
+	font-size: xxx-large;
+	margin-bottom: 0%;
+}
+
+/*----------LAYOUT DE TEXTO DE ATENCION INTEGRAL ----------
+.attentionText{
+	padding-left: 70px;
+	padding-top: 25px;
+	padding-right: 70px;
+}
+
+/*---------LAYOUT DE TEXTO DE PRODUCTOS -----------
+.productsText{
+	padding-left: 60px;
+	padding-top: 25px;
+	padding-right: 70px;
+}
+
+/*----------LAYOUT DE TEXTO DE MANTENIMIENTO ----------
+.maintenanceText{
+	padding-left: 100px;
+	padding-top: 25px;
+	padding-right: 85px;
+}
+
+/*----------LAYOUT DE ICONO DE PRODUCTOS DE CALIDAD ----------
+*/
+.iconDoor{
+	font-size: xxx-large;
+}
+
+/*----------LAYOUT DE ICONO DE MANTENIMIENTO TECNICO ----------
+*/
+.iconTools{
+	font-size: xxx-large;
+
+}
+
+@media(max-width:700px){
+	.row-Two{
+		flex-direction: column;
+		padding-top: 8%;
+		padding-bottom: 8%;
+	}
+
+	.column-Two{
+		width: 100%;
+		text-align: center;
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-bottom: 4%;
+	}
+
+	.subtitle.is-4.two{
+		font-size: 31px;
+	}
+
+	.subtitle.is-5.two{	
+		font-size: 21px;
+	}
+
+	.separator.small.left-Two{
+		width: 102%;
+		padding-top: 0%;
+		margin-top: 0.1%;
+		margin-bottom: 7%;
+		margin-left: 0%;
+	}
+	
+}
+
+
+/*----------ACA EMPIEZA LA TERCER COLUMNA----------*/
+.row-Third{
+	display: flex;
+}
+
+.column-Third{
+	float: left;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+/*----------LAYOUT DEL BLOQUE IZQUIERDO ----------*/
+.left-Third {
+	width: 30%;
+	padding-left: 20px;
+	background-color: white;
+}
+
+/*----------LAYOUT DEL BLOQUE DERECHO ----------*/
+.right-Third {
+	width: 70%;
+	background-color: white;
+}
+
+/*----------LINEA DIVISORA DEL BLOQUE IZQUIERDO ----------*/
+.separator.small.left-Third{
+	margin-top: 15px;
+	background-color: #f13943;
+	height: 8px;
+	width: 100px;
+}
+
+/*----------LAYOUT DE IMAGEN DEL SHOWROOM ----------*/
+.imageShowroom{
+	max-width: 75rem;
+	padding-left: 15%;
+}
+
+.row-Third:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media(max-width:1366px){
+	.imageShowroom{
+		max-width: 90%;
+		padding-left: 10%;
+	}
+}
+
+@media(max-width:700px){
+	.row-Third{
+		flex-direction: column;
+	}
+
+	.column-Third{
+		width: 100%;
+		padding-top: 10%;
+		padding-bottom: 5%;
+	}
+
+	.subtitle.is-4.third{
+		font-size: 30px;
+	}
+
+	.imageShowroom{
+		max-width: 100%;
+		padding-top: 0%;
+		margin-top: 0%;
+		padding: 2%;
+	}
+
+	.right-Third{
+		padding-bottom: 15%;
+	}
+}
+
+/*----------LAYOUT DEL FORMULARIO DE  CONTACTO ----------*/
+.form{
+	background-color: #2e2e2e;
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-top: 2%;
+	padding-bottom: 3%;
+}
+
+.subtitle.is-1.form{
+	font-size: 55px;
+	padding: 0%;
+	text-align: center;
+}
+/*----------LAYOUT DEL INPUT APELLIDO ----------*/
+.fieldSurname{
+	padding-left: 8%;
+}
+
+/*----------LAYOUT DEL BOTON ENVIAR ----------*/
+.controlSend{
+	padding-top: 2%;	
+}
+
+/*----------ESTILOS DEL BOTON ENVIAR ----------*/
+.send{
+	background-color: #F13943;
+	border-color: #F13943;
 	color: black;
-	margin-right: 100px;
-	font-size: 50px;
 }
 
-.iconTool{
-	color: black;
-	margin-right: 100px;
-	font-size: 50px;
+/*----------LAYOUT DEL BOTON CANCELAR ----------*/
+.controlCancel{
+	padding-top: 2%;
+	padding-left: 2%;
 }
 
-.iconPencil{
-	color: black;
-	font-size: 50px;
+@media(max-width:1366px){
+	.form{
+		padding-left: 29%;
+		padding-right: 27%;
+	}
 }
 
-.controlEmpresaButton{
-	padding-left:150px ;
+
+
+@media(max-width:700px){
+	.form{
+		padding-left: 3%;
+		padding-right: 3%;
+		padding-top: 1%;
+		padding-bottom: 9%;
+	}
+
+	.subtitle.is-1.form{
+		font-size: 40px;
+		padding-bottom: 5%;
+		padding-top: 5%;
+	}
+
+	.fieldSurname{
+		padding-left: 0%;
+	}
+	
+	.controlSend{
+		padding-top: 8%;	
+	}
+	
+	.controlCancel{
+		padding-top: 8%;
+		padding-left: 2%;
+	}
+	
+
 }
 
-.columns{
-	margin-top: 100px;
+
+/*----------LAYOUT Y ESTILOS DEL FOOTER AL FINAL DE LA PAGINA----------*/
+.footerLast{
+	background-color: #F13943;
+	padding-bottom: 1.5%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+.row-Footer{
+	display: flex;
 }
 
-.boxLeft{
-	margin-left: 150px;
-	margin-right: 0px;
+
+/*----------COLUMNA DEL FOOTER AL FINAL DE LA PAGINA ----------*/
+.column-Footer{
+	float: left;
+  	width: 33.33%;
 }
 
-.boxRight{
-	margin-left: 150px;
+/*----------TAMAÑO DE LA COLUMNA IZQUIERDA DONDE VA EL LOGO ----------*/
+.column-Footer.logoAS.left{
+	width: 25%;
+	display:table-cell;
+    text-align:center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*----------TAMAÑO DE LA COLUMNA DEL MEDIO ----------*/
+.column-Footer.contactAS.middle{
+	width: 50%;
+}
+
+/*----------DIVISION DE LA COLUMNA DEL MEDIO EN DOS ----------*/
+.row-Middle{
+	display: flex;
+}
+
+
+.column-Middle{
+	float: left;
+  	width: 50%;
+	padding-top: 1%;
+}
+
+/*----------TAMAÑO DE LA COLUMNA DERECHA DONDE VAN LAS REDES SOCIALES ----------*/
+.column-Footer.socialmediaAS.right{
+	width: 25%;
+}
+
+/*----------LAYOUT DEL LOGO DENTRO DEL BLOQUE IZQUIERDO ----------*/
+.logoAS{
+	padding: 2%;
+	/*max-width: 100%;
+	padding-left: 2%;
+	padding-top: 2%;*/
+}
+
+/*----------LAYOUT DEL BLOQUE DEL MEDIO ----------*/
+.contactAS{
+	padding-top: 1%;
+}
+
+/*----------LAYOUT DE LOS TITULOS PRINCIPIALES AL LADO DE LOS ICONOS ----------*/
+.title.is-4.middle{
+	margin-bottom: 1%;
+}
+
+/*----------LAYOUT DE LOS TEXTOS DEBAJO DE CADA TITULO IS-4 ----------*/
+.title.is-6.middle{
+	padding-top: 0px;
+	padding-left: 3%;
+	font-size: 17px;
+}
+
+/*----------LINEA DIVISORA DEBAJO DE LOS TITLES IS-4 ----------*/
+.separator.small.left-Fourth{
+	margin-top: 0%;
+	padding-top: 0%;
+	margin-bottom: 2.2%;
+	background-color: #363636;
+	height: 2px;
+	width: 80px;
+	margin-left: 3%;
+}
+
+/*----------LAYOUT DE TODO EL BLOQUE DERECHO DE LA TERCER COLUMNA ----------*/
+.socialmediaAS{
+	padding-top: 0.6%;
+}
+
+/*----------LAYOUT DE LOS ICONOS DE INSTAGRAM Y FACEBOOK SIN EL TITULO ----------*/
+.socialMedia{
+	padding-top: 3.5%;
+}
+
+/*----------ESTILOS Y LAYOUT DEL TITULO AL LADO DEL LOGO DE INSTAGRAM----------*/
+.title.is-6.Inst{
+	color: #363636 !important;
+	font-size: 20px;
+	padding-left: 1%;
+}
+
+.title.is-6.Inst:hover{
+	color: #363636;
+}
+
+
+/*----------ESTILOS Y LAYOUT DEL ICONO DE INSTAGRAM ----------*/
+.iconInstagram{
+	font-size: xx-large;
+	color: #363636;
+}
+
+/*----------ESTILOS Y LAYOUT DEL ICONO DE FACEBOOK ----------*/
+.iconFacebook{
+	font-size: xx-large;
+	color: #363636;
+}
+
+/*----------ESTILOS Y LAYOUT DEL TITULO AL LADO DEL LOGO DE FACEBOOK ----------*/
+.title.is-6.Face{
+	color: #363636 !important;
+	font-size: 20px;
+	padding-left: 1%;
+}
+
+.title.is-6.Face:hover{
+	color: #363636;
+}
+
+/*----------LINEA DIVISORA DEBAJO DEL TITULO DE LAS REDES SOCIALES ----------*/
+.separator.small.left-Media{
+	margin-top: 0%;
+	padding-top: 0%;
+	margin-bottom: 2%;
+	background-color: #363636;
+	height: 4px;
+	width: 150px;
+	margin-left: 1.5%;
+}
+
+.row-Footer:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media(max-width:1366px){
+	.logoAS{
+		max-height: 8rem;
+		padding-left: 1%;
+		padding-top: 3.5%;
+	}
+
+	.title.is-6.middle{
+		padding-top: 1%;
+	}
+
+	.title.is-6.Inst{
+		font-size: 17px;
+	}
+
+	.title.is-6.Face{
+		font-size: 17px;
+	}
+
+
+@media(max-width:700px){
+
+	.row-Footer{		
+		flex-direction: column;
+	}
+
+	.column-Footer{
+		width: 100%;
+	}
+	
+	.row-Middle{
+		flex-direction: column;
+	}
+	
+	.column-Middle{
+		width: 100%;
+	}
+
+	.column-Footer.socialmediaAS.right{
+		width: 100%;
+	}
+
+	.column-Footer.contactAS.middle{
+		width: 100%;
+	}
+
+	.column-Footer.logoAS.left{
+		width: 100%;
+		padding-top: 5%;
+		padding-bottom: 35%;
+	}
+
+	.title.is-4.middle{
+		padding-top: 5%;
+		padding-left: 1%;
+		padding-right: 1%;
+		text-align: center;
+	}
+
+	.title.is-6.middle{
+		padding-left: 1%;
+		padding-right: 1%;
+		text-align: center;
+	}
+	
+	/*
+	.title.is-4.middle.rightPosition{
+		text-align: right;
+	}
+
+	.title.is-6.middle.rightPosition{
+		text-align: right;
+	}
+	*/
+	.separator.small.left-Fourth{
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	.separator.small.left-Fourth.rightPosition{
+		margin-right: 3%;
+		width: 50%;
+		margin-left: 25%;
+	}
+
+	.title.is-6.middle.rightPosition.sells{
+		padding-bottom: 8%;
+	}
+
+	.title.is-4.middle.socialMedia{
+		text-align: center;
+	}
+
+	.separator.small.left-Media{
+		width: 700px;
+		margin: 0%;
+	}
+	
+
+	.title.is-6.Face{
+		font-size: 19px;
+	}
+
+
+	.title.is-6.Inst{
+		font-size: 19px;
+	}
+}
+
+
+
+/*----------ESTILOS PARA LOS LINKS QUE YA HAN SIDO VISITADOS ----------*/
+a:visited {
+	color: #363636;
+}
+
+
+
+/*-------------------------------ESTILOS DE CONTACT.HTML-----------------------------------------*/
+.imageContact{
+	position: relative;
+}
+
+.contact-btn{
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid black;
+	left: 40%;
+	top: 40%;
+	padding: 12px 34px;
+	font-size: 45px;
+	background: black;
+	opacity: 0.85;
+	position: absolute;
+}
+
+
+
+/*
+.hero-btn:hover{
+	border: 1px solid black;
+	opacity: 0.7;
+	background: black;
+	transition: 1s;
+}
+*/
+/*
+.boxContain{
+	position: absolute;
+	top: 47%;
+	left: 39%;
+	right: 41%;
+	background-color: #2e2e2e;
+	opacity: 0.8;
+	padding: 1.5%;
+
+}
+
+.textContact{
+	position: absolute;
+	font-size: xxx-large;
+	color: #F13943;
+	opacity: 0.98 !important;
+	left: 40%;
+	top: 45%;
+	/*
+	width: 100%;
+	margin: 0 auto;
+	width: 300px;
+	height: 50px;
+	/*
+}
+*/
+.row-Contact{
+	display: flex;
+}
+
+.column-Contact{
+	float: left;
+}	
+
+.left-Contact{
+	width: 20%;
+	background-color: #2e2e2e;
+	font-weight: 550;
+	color: white;
+	padding-left: 1%;
+	padding-bottom: 2.29%;
+}	
+
+.separator.contact.left{
+	background-color: white;
+	height: 1px;
+	margin-top: 1%;
+	width: 100px;
+	margin-left: 1%;
+}
+
+.separator.contact.right{
+	background-color: #2e2e2e;
+	height: 4px;
+	width: 150px;
+	margin-left: 1%;
+}
+
+.titlesContact{
+	font-size: 25px;
+	text-align: left;
+}
+
+.subtitlesContact{
+	padding-top: 3%;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 8%;
+}
+
+
+.icon-group{
+	/*display: inline-block;*/
+	/*white-space: nowrap;*/
+	font-size: xxx-large;
+	color: #F13943 !important;
+	text-align: center;
+	
+}
+
+.icon-group:visited {
+	color: #F13943 !important;
+}
+
+.icon-group:hover{
+	color: #F13943 !important;
+}
+
+
+@media(max-width:1366px){
+	.contact-btn{
+		left: 37%;
+		top: 37%;
+	}
+
+	.titlesContact{
+		font-size: 20px;
+	}
+
+	.subtitlesContact{
+		font-size: 16px;
+		padding-top: 4.4%;
+	}
+
+	.left-Contact{
+		padding-bottom: 6.2%;
+	}
+
+}
+
+.right-Contact{
+	width: 80%;
+	background-color: #D9D9D9;
+}
+
+.controlPaddingFormulary{
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.controlSendContact{
+	padding-bottom: 2%;
+}
+
+.column-Contact-Middle{
+	float: left;
+}
+
+.column-Contact-Middle.maps{
+	width: 60%;
+	padding: 1%;
+}
+
+.divMap{
+	padding-left: 5%;
+	height: 300px;
+	width: 800px;
+}
+
+.secondTitleContact{
+	font-weight: 500;
+	color: #2e2e2e;
+	font-size: 35px;
+}
+
+.column-Contact-Middle.formulary{
+	width: 40%;
+	padding: 1%;
+}
+
+@media(max-width:1366px){
+
+	.divMap{
+		height: 400px;
+		width: 600px;
+	}
+
+	.secondTitleContact{
+		font-size: 25px;
+	}
+}
+
+.row-Contact::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer-Contact{
+	background-color: #F13943;
+}
+
+.footer-Contact img{
+	max-height: 10rem;
+	padding: 1%;
+	justify-content: center;
+}
+
+
+@media(max-width:700px){
+	.contact-btn{
+		left: 35%;
+		top: 35%;
+		padding: 3px 8px;
+		font-size: 15px;
+	}
+
+	.row-Contact{
+		flex-direction: column;
+	}
+
+	.column-Contact{
+		width: 100%;
+	}
+
+	.titlesContact.left{
+		text-align: center;
+		font-size: 27px;
+	}
+
+	.subtitlesContact.left{
+		text-align: center;
+		font-size: 17px;
+		padding-left: 0%;
+	}
+
+	.column-Contact-Middle.maps{
+		width: 100%;
+		padding-top: 10%;
+		padding-bottom: 5%;
+	}
+	
+	.divMap{
+		padding: 1.5%;
+		height: 99%;
+		width: 99%;
+	}
+	
+	.separator.contact.left{
+		margin-left: 25%;
+		width: 50%;
+	}
+
+	.column-Contact-Middle.formulary{
+		width: 100%;
+		padding-bottom: 5%;
+	}
+
+	
+}
+
+
+
+/*RESPONSIVIDAD DEL BOTON DE WHATSAPP*/
+/*AL FINAL PARA QUE TODOS LOS .HTML RESPONDAN A ESTO*/
+
+@media(max-width:1366px){
+	.float{
+		bottom: 1%;
+		right: 1%;
+		font-size: 30px;
+		width:50px;
+		height:50px;
+	}
 
 }
