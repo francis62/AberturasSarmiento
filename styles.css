@@ -157,6 +157,7 @@ img { max-width: 100%; height: auto; }
 	padding: 29px 28px;
 	position: relative;
 }
+
 .navbar-end ul li a{
 	color: #363636;
 	text-decoration: none;
@@ -271,8 +272,26 @@ img { max-width: 100%; height: auto; }
 	border-radius:50px;
 	text-align: center;
     font-size: 37px;
-	box-shadow: 2px 2px 3px #999;
+	box-shadow: 2px 2px 3px #2e2e2e;
     z-index: 100;
+}
+
+@media(max-width:1366px){
+	.float{
+	bottom: 1%;
+	right: 1%;
+	font-size: 30px;
+	width:50px;
+	height:50px;
+	}
+}
+
+@media(max-width:700px){
+	.float{
+		width: 13%;
+		height: 7%;
+		font-size: 32px;
+	}
 }
 
 /*-------------------START slideshow firstOne------------------------------*/
@@ -320,11 +339,17 @@ img { max-width: 100%; height: auto; }
 
 /*-------------------START slideshow secondOne(W3)-----------------*/
 
-* {box-sizing: border-box}
+*{
+	box-sizing: border-box
+}
 
-.mySlides {display: none}
+.mySlides{
+	display: none
+}
 
-img {vertical-align: middle;}
+img{
+	vertical-align: middle;
+}
 
 /*----------Slideshow container----------*/
 .slideshow-container {
@@ -471,19 +496,6 @@ img {vertical-align: middle;}
 
 /*----------ISOTIPO DENTRO DE LA SEGUNDA COLUMNA ----------*/
 .imageRowIso{
-	/*
-	max-width: 35rem;
-	padding-left: 55px;
-	margin-left: 20px;
-	
-	
-	padding: 5%;
-	display:table-cell;
-    text-align:center;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	*/
 	opacity: 0.75;
 }
 
@@ -656,13 +668,13 @@ img {vertical-align: middle;}
 
 .column-Third{
 	float: left;
-	padding-top: 150px;
-	padding-bottom: 150px;
+	/*padding-top: 150px;*/
 }
 
 /*----------LAYOUT DEL BLOQUE IZQUIERDO ----------*/
 .left-Third {
 	width: 30%;
+	padding-top: 5%;
 	padding-left: 20px;
 	background-color: white;
 }
@@ -670,12 +682,14 @@ img {vertical-align: middle;}
 /*----------LAYOUT DEL BLOQUE DERECHO ----------*/
 .right-Third {
 	width: 70%;
+	padding-left: 7%;
 	background-color: white;
 }
 
 /*----------LINEA DIVISORA DEL BLOQUE IZQUIERDO ----------*/
 .separator.small.left-Third{
-	margin-top: 15px;
+	margin-top: 2%;
+	padding-top: 0%;
 	background-color: #f13943;
 	height: 8px;
 	width: 100px;
@@ -683,8 +697,9 @@ img {vertical-align: middle;}
 
 /*----------LAYOUT DE IMAGEN DEL SHOWROOM ----------*/
 .imageShowroom{
-	max-width: 75rem;
-	padding-left: 15%;
+	/*max-width: 75rem;*/
+	width: 85%;
+	float: right;
 }
 
 .row-Third:after {
@@ -726,6 +741,39 @@ img {vertical-align: middle;}
 		padding-bottom: 15%;
 	}
 }
+
+/*----------ACA EMPIEZA LA CUARTA COLUMNA----------------*/
+.row-Fabrica{
+	display: flex;
+	padding-top: 0%;
+	padding-bottom: 0%;
+}
+
+.column-Fabrica{
+	float: left;
+}
+
+/*----------LAYOUT DEL BLOQUE IZQUIERDO ----------*/
+.left-Fabrica {
+	width: 67%;
+	padding-right: 7%;
+	background-color: white;
+}
+
+/*----------LAYOUT DEL BLOQUE DERECHO ----------*/
+.right-Fabrica {
+	width: 33%;
+	background-color: white;
+	padding-top: 5%;
+}
+
+/*-----------LAYOUT DE IMAGEN DE FABRICA-----------------*/
+.imageFabrica{
+	width: 90%;
+}
+
+
+
 
 /*----------LAYOUT DEL FORMULARIO DE  CONTACTO ----------*/
 .form{
@@ -970,7 +1018,7 @@ img {vertical-align: middle;}
 	.title.is-6.Face{
 		font-size: 17px;
 	}
-
+}
 
 @media(max-width:700px){
 
@@ -1079,7 +1127,8 @@ a:visited {
 	display: inline-block;
 	text-decoration: none;
 	border: 1px solid black;
-	left: 40%;
+	text-align: center;
+	left: 42.5%;
 	top: 40%;
 	padding: 12px 34px;
 	font-size: 45px;
@@ -1268,16 +1317,6 @@ a:visited {
 	clear: both;
 }
 
-.footer-Contact{
-	background-color: #F13943;
-}
-
-.footer-Contact img{
-	max-height: 10rem;
-	padding: 1%;
-	justify-content: center;
-}
-
 
 @media(max-width:700px){
 	.contact-btn{
@@ -1331,18 +1370,18 @@ a:visited {
 	
 }
 
-
-
-/*RESPONSIVIDAD DEL BOTON DE WHATSAPP*/
-/*AL FINAL PARA QUE TODOS LOS .HTML RESPONDAN A ESTO*/
-
-@media(max-width:1366px){
-	.float{
-		bottom: 1%;
-		right: 1%;
-		font-size: 30px;
-		width:50px;
-		height:50px;
-	}
-
+a:link{
+	color: #2e2e2e;
 }
+
+
+.footer-Contact{
+	background-color: #F13943;
+}
+
+.footer-Contact img{
+	max-height: 10rem;
+	padding: 1%;
+	justify-content: center;
+}
+
