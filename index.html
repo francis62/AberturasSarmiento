@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Aberturas Sarmiento S.A</title>
+        <title>Aberturas Sarmiento</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
@@ -64,7 +64,7 @@
                                 </span>
                             </a>
 
-                            <a class="controlIconFacebook" href="https://www.facebook.com" target="_blank">
+                            <a class="controlIconFacebook" href="https://www.fb.me/aberturassarmiento.mendoza" target="_blank">
                                 <span class="icon">
                                     <i class="fab fa-facebook-square" aria-hidden="true"></i>
                                 </span>
@@ -257,7 +257,7 @@
         </div>
 
         <div class="column-Third right-Third">
-          <img  class="imageShowroom" src="images/Aberturas/as new/highwork (2).jpg" style="border:25px outset #F13943;">
+          <img  class="imageShowroom" src="images/Aberturas/as new/highwork (2).jpg">
         </div>
       </div>
     </section>
@@ -265,97 +265,96 @@
     <section class="sectionFabrica">
       <div class="row-Fabrica" style="background-color: white;">
         <div class="column-Fabrica left-Fabrica">
-            <img class="imageFabrica" src="images/Aberturas/as new/pexels-pixabay-236705.jpg" style="border:25px inset #F13943;">  
+            <img class="imageFabrica" src="images/Aberturas/as new/pexels-pixabay-236705.jpg">  
         </div>
 
         <div class="column-Fabrica right-Fabrica">
           <h4 class="subtitle is-4 Fabrica" style="text-align: right; padding-right: 20px;">
             Este es el lugar donde nuestros trabajadores <strong>elaboran todos los productos con maquinaria italiana.</strong>
-            <div class="separator  small left-Third" style="margin-left: 83.5%;"></div>
+            <div class="separator  small left-Third Fabrica"></div>
           </h4>  
         </div>
       </div>
     </section>
-
-
+  
 
     <section class="form">
-      
       <p class="subtitle is-1 form" style="color: white;">Enviános tu consulta</p>
+      <form class="contact" name="contact-form" method="POST" action="enviar2.php">
+        <div class="field is-horizontal">
+          <div class="field">
+            <label class="label" style="color: white;">Nombre</label>
 
-      <div class="field is-horizontal">
-        <div class="field">
-          <label class="label" style="color: white;">Nombre</label>
-
-          <div class="control has-icons-left">
-            <input class="input" type="text" placeholder="Nombre">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
-          </div>
-        </div>
-                        
-        <div class="fieldSurname">
-          <label class="label" style="color: white;">Apellido</label>
-
-            <div class="control is-expanded has-icons-left">
-              <input class="input" type="text" placeholder="Apellido">
+            <div class="control has-icons-left">
+              <input class="input" type="text" name="nombre" placeholder="Nombre">
               <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
+                <i class="fas fa-user"></i>
               </span>
             </div>
+          </div>
+                          
+          <div class="fieldSurname">
+            <label class="label" style="color: white;">Apellido</label>
+
+              <div class="control is-expanded has-icons-left">
+                <input class="input" type="text" name="apellido" placeholder="Apellido">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-lock"></i>
+                </span>
+              </div>
+
+          </div>
 
         </div>
 
-      </div>
-
-      <div class="field">
         <div class="field">
-          <label class="label" style="color: white;">Email</label>
-          <div class="control has-icons-left">
-            <input class="input" type="email" placeholder="Email">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
+          <div class="field">
+            <label class="label" style="color: white;">Email</label>
+            <div class="control has-icons-left">
+              <input class="input" type="email" name="email" placeholder="Email">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+            </div>
+          </div>
+          </br>
+          <div class="field">
+            <label class="label" style="color: white;" >Seleccione la categoría de su interés</label>
+            <div class="control">
+              <div class="select">
+                <select id="select">
+                  <option disabled="disabled" selected="selected">Ver opciones</option>
+                  <option>Pregunta general</option>
+                  <option>Abertura de aluminio</option>
+                  <option>Duda sobre materiales</option>
+                  <option>Colores para las aberturas</option>
+                  <option>Tipo de aberturas disponibles</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
         </br>
-        <div class="field">
-          <label class="label" style="color: white;" >Seleccione la categoría de su interés</label>
-          <div class="control">
-            <div class="select">
-              <select id="select">
-                <option disabled="disabled" selected="selected">Ver opciones</option>
-                <option>Pregunta general</option>
-                <option>Abertura de aluminio</option>
-                <option>Duda sobre materiales</option>
-                <option>Colores para las aberturas</option>
-                <option>Tipo de aberturas disponibles</option>
-              </select>
+        <div class="field-body">
+          <div class="field">
+            <label class="label" style="color: white;">Escriba su consulta</label>
+            <div class="control is-expanded">
+              <textarea class="textarea" name="mensaje" placeholder="Escriba aqui..."></textarea>
             </div>
           </div>
         </div>
-      </div>
-      </br>
-      <div class="field-body">
-        <div class="field">
-          <label class="label" style="color: white;">Escriba su consulta</label>
-          <div class="control is-expanded">
-            <textarea class="textarea" placeholder="Escriba aqui..."></textarea>
+
+        <div class="field is-grouped">
+          <div class="controlSend">
+            <button class="button send" type="submit">Enviar</button>
+          </div>
+          <div class="controlCancel">
+            <button class="button is-light">Cancelar</button>
           </div>
         </div>
-      </div>
-
-      <div class="field is-grouped">
-        <div class="controlSend">
-          <button class="button send">Enviar</button>
-        </div>
-        <div class="controlCancel">
-          <button class="button is-light">Cancelar</button>
-        </div>
-      </div>
-
+      </form>
     </section>
+
 
     <section class="footerLast">
       <div class="row-Footer">
@@ -393,7 +392,7 @@
 
           <div class="socialMedia">
             <p class="title is-6 Inst">
-              <a class="controlMediaInstagram" href="https://www.instagram.com/" target="_blank">
+              <a class="controlMediaInstagram" href="https://www.instagram.com/aberturas.sarmiento" target="_blank">
                 <span class="iconInstagram">
                   <i class="fab fab fa-instagram-square" aria-hidden="true"></i>
                 </span>
@@ -402,15 +401,19 @@
             </p>
             
             <p class="title is-6 Face">
-              <a class="controlMediaFacebook" href="https://www.facebook.com/" target="_blank">
+              <a class="controlMediaFacebook" href="https://www.fb.me/aberturassarmiento.mendoza" target="_blank">
                 <span class="iconFacebook">
                   <i class="fab fa-facebook-square" aria-hidden="true"></i>
                 </span>
               </a>
-              <a href="https://www.facebook.com/" style="color:#363636;" target="_blank">facebook.com/aberturassarmiento</a>
+              <a href="https://www.fb.me/aberturassarmiento.mendoza" style="color:#363636;" target="_blank">facebook.com/aberturassarmiento.mdz</a>
             </p>
           </div>
 
+          <!--
+            facebook.com/aberturassarmiento.mdz
+            fb.me/aberturassarmiento.mendoza y enviarle mensajes en https://m.me/aberturassarmiento.mendoza.
+          -->
         </div>
       </div>
     </section>

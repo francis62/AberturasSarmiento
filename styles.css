@@ -276,6 +276,13 @@ img { max-width: 100%; height: auto; }
     z-index: 100;
 }
 
+@media(max-width:1440px){
+	.float{
+		bottom: 1%;
+		right: 1%;
+	}
+}
+
 @media(max-width:1366px){
 	.float{
 	bottom: 1%;
@@ -291,6 +298,8 @@ img { max-width: 100%; height: auto; }
 		width: 13%;
 		height: 7%;
 		font-size: 32px;
+		bottom: 5%;
+		right: 2%;
 	}
 }
 
@@ -353,7 +362,7 @@ img{
 
 /*----------Slideshow container----------*/
 .slideshow-container {
-  max-width: 1900px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -700,6 +709,7 @@ img{
 	/*max-width: 75rem;*/
 	width: 85%;
 	float: right;
+	border:25px outset #F13943;
 }
 
 .row-Third:after {
@@ -710,8 +720,8 @@ img{
 
 @media(max-width:1366px){
 	.imageShowroom{
-		max-width: 90%;
-		padding-left: 10%;
+		max-width: 100%;
+		padding-left: 0%;
 	}
 }
 
@@ -731,14 +741,16 @@ img{
 	}
 
 	.imageShowroom{
-		max-width: 100%;
+		width: 100%;
 		padding-top: 0%;
 		margin-top: 0%;
-		padding: 2%;
+		padding: 0%;
+		border: 20px outset #F13943;
 	}
 
 	.right-Third{
-		padding-bottom: 15%;
+		padding-bottom: 0%;
+		padding-left: 0%;
 	}
 }
 
@@ -770,10 +782,75 @@ img{
 /*-----------LAYOUT DE IMAGEN DE FABRICA-----------------*/
 .imageFabrica{
 	width: 90%;
+	border:25px inset #F13943;
 }
 
+.separator.small.left-Third.Fabrica{
+	margin-left: 83.5%;
+}
 
+@media(max-width:1440px){
+	.separator.small.left-Third.Fabrica{
+		margin-left: 78%;
+	}
+}
 
+@media(max-width:1366px){
+	.separator.small.left-Third.Fabrica{
+		margin-left: 77%; 
+		padding-left: 0%;
+	}
+}
+
+@media(max-width:700px){
+	.row-Fabrica{
+		flex-direction: column;
+	}
+
+	.column-Fabrica{
+		width: 100%;
+	}
+
+	.imageFabrica{
+		width: 100%;
+		padding: 0%;
+		margin: 0%;
+		border: 20px inset #F13943;
+	}
+
+	.left-Fabrica{
+		padding-right: 0%;
+	}
+
+	.right-Fabrica{
+		padding-top: 10%;
+		padding-bottom: 8%;
+		padding-right: 1%;
+		font-size: 30px;
+	}
+
+	.subtitle.is-4.Fabrica{
+		font-size: 27px;
+	}
+
+	.separator.small.left-Third.Fabrica{
+		margin-left: 75% !important;
+		padding-left: 0%;
+	}
+}
+
+/*
+COMO CONTROLAR EL COLOR DE CADA BORDE INSET Y OUTSET 
+
+#myElement{
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: black;
+  border-left-color: black;
+  border-right-color: white;
+  border-bottom-color: white;
+}
+*/
 
 /*----------LAYOUT DEL FORMULARIO DE  CONTACTO ----------*/
 .form{
@@ -855,7 +932,7 @@ img{
 /*----------LAYOUT Y ESTILOS DEL FOOTER AL FINAL DE LA PAGINA----------*/
 .footerLast{
 	background-color: #F13943;
-	padding-bottom: 1.5%;
+	padding-bottom: 3%;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 } 
 
@@ -1000,6 +1077,18 @@ img{
 	clear: both;
 }
 
+@media(max-width:1440px){
+	.title.is-6.Inst{
+		padding-left: 0.5%;
+		font-size: 17px;
+	}
+
+	.title.is-6.Face{
+		padding-left: 0.5%;
+		font-size: 17px;
+	}
+}
+
 @media(max-width:1366px){
 	.logoAS{
 		max-height: 8rem;
@@ -1012,11 +1101,13 @@ img{
 	}
 
 	.title.is-6.Inst{
-		font-size: 17px;
+		padding-left: 0.5%;
+		font-size: 16.5px;
 	}
 
 	.title.is-6.Face{
-		font-size: 17px;
+		padding-left: 0.5%;
+		font-size: 16.5px;
 	}
 }
 
@@ -1297,6 +1388,13 @@ a:visited {
 .column-Contact-Middle.formulary{
 	width: 40%;
 	padding: 1%;
+}
+
+@media(max-width:1440px){
+	.divMap{
+		height: 400px;
+		width: 620px;
+	}
 }
 
 @media(max-width:1366px){
