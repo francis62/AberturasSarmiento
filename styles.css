@@ -709,7 +709,12 @@ img{
 	/*max-width: 75rem;*/
 	width: 85%;
 	float: right;
-	border:25px outset #F13943;
+	border-style: solid;
+	border-width: 25px;
+	border-top-color: #F13943;
+	border-left-color: #F13943;
+	border-right-color: #2e2e2e;
+	border-bottom-color: #2e2e2e;
 }
 
 .row-Third:after {
@@ -782,7 +787,12 @@ img{
 /*-----------LAYOUT DE IMAGEN DE FABRICA-----------------*/
 .imageFabrica{
 	width: 90%;
-	border:25px inset #F13943;
+	border-style: solid;
+	border-width: 25px;
+	border-top-color: #2e2e2e;
+	border-left-color: #2e2e2e;
+	border-right-color: #F13943;
+	border-bottom-color: #F13943;
 }
 
 .separator.small.left-Third.Fabrica{
