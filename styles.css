@@ -303,6 +303,17 @@ img { max-width: 100%; height: auto; }
 	}
 }
 
+@media(max-width:450px){
+	.float{
+		width: 60px;
+		height: 60px;
+		font-size: 37px;
+		bottom: 3.7%;
+		right: 2%;
+		text-align: center;
+	}
+}
+
 /*-------------------START slideshow firstOne------------------------------*/
 /*
 .image-slideshow {
@@ -750,7 +761,7 @@ img{
 		padding-top: 0%;
 		margin-top: 0%;
 		padding: 0%;
-		border: 20px outset #F13943;
+		border-width: 17px;
 	}
 
 	.right-Third{
@@ -812,6 +823,12 @@ img{
 	}
 }
 
+@media(max-width:1024px){
+	.separator.small.left-Third.Fabrica{
+		margin-left: 70%;
+	}
+}
+
 @media(max-width:700px){
 	.row-Fabrica{
 		flex-direction: column;
@@ -825,7 +842,7 @@ img{
 		width: 100%;
 		padding: 0%;
 		margin: 0%;
-		border: 20px inset #F13943;
+		border-width: 17px;
 	}
 
 	.left-Fabrica{
@@ -849,6 +866,12 @@ img{
 	}
 }
 
+@media(max-width:400px){
+	.separator.small.left-Third.Fabrica{
+		margin-left: 72% !important;
+	}
+}
+
 /*
 COMO CONTROLAR EL COLOR DE CADA BORDE INSET Y OUTSET 
 
@@ -865,57 +888,93 @@ COMO CONTROLAR EL COLOR DE CADA BORDE INSET Y OUTSET
 /*----------LAYOUT DEL FORMULARIO DE  CONTACTO ----------*/
 .form{
 	background-color: #2e2e2e;
-	padding-left: 30%;
+	padding-left: 32%;
 	padding-right: 30%;
 	padding-top: 2%;
-	padding-bottom: 3%;
+	padding-bottom: 2%;
 }
 
+.Gform{
+	width: 710px; 
+	height: 900px;
+}
+
+
+/*
 .subtitle.is-1.form{
 	font-size: 55px;
 	padding: 0%;
 	text-align: center;
 }
+*/
 /*----------LAYOUT DEL INPUT APELLIDO ----------*/
+/*
 .fieldSurname{
 	padding-left: 8%;
 }
-
+*/
 /*----------LAYOUT DEL BOTON ENVIAR ----------*/
+/*
 .controlSend{
 	padding-top: 2%;	
 }
-
+*/
 /*----------ESTILOS DEL BOTON ENVIAR ----------*/
+/*
 .send{
 	background-color: #F13943;
 	border-color: #F13943;
 	color: black;
 }
-
+*/
 /*----------LAYOUT DEL BOTON CANCELAR ----------*/
+/*
 .controlCancel{
 	padding-top: 2%;
 	padding-left: 2%;
 }
-
+*/
 @media(max-width:1366px){
 	.form{
 		padding-left: 29%;
 		padding-right: 27%;
 	}
+
+	.Gform{
+		width: 650px; 
+	}
 }
 
+@media(max-width:1024px){
+	.form{
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
 
+@media(max-width:1000px){
+	.form{
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	.Gform{
+		width: 780px;
+	}
+}
 
 @media(max-width:700px){
 	.form{
-		padding-left: 3%;
-		padding-right: 3%;
+		padding-left: 0%;
+		padding-right: 0%;
 		padding-top: 1%;
 		padding-bottom: 9%;
 	}
 
+	.Gform{
+		width: 420px;
+	}
+	/*
 	.subtitle.is-1.form{
 		font-size: 40px;
 		padding-bottom: 5%;
@@ -934,10 +993,33 @@ COMO CONTROLAR EL COLOR DE CADA BORDE INSET Y OUTSET
 		padding-top: 8%;
 		padding-left: 2%;
 	}
-	
+	*/
 
 }
 
+@media(max-width:400px){
+	.form{
+		padding-top: 4%;
+		padding-bottom: 8%;
+	}
+
+	.Gform{
+		width: 370px;
+		height: 1000px;
+	}
+}
+
+@media(max-width:350px){
+	.form{
+		padding-top: 5%;
+	}
+
+	.Gform{
+		padding-left: 0%;
+		width: 320px;
+		height: 1080px;
+	}
+}
 
 /*----------LAYOUT Y ESTILOS DEL FOOTER AL FINAL DE LA PAGINA----------*/
 .footerLast{
@@ -1210,6 +1292,18 @@ COMO CONTROLAR EL COLOR DE CADA BORDE INSET Y OUTSET
 	}
 }
 
+@media(max-width:400px){
+	.title.is-6.Inst{
+		padding-left: 0.3%;
+		font-size: 16.5px;
+	}
+
+	.title.is-6.Face{
+		padding-left: 0.3%;
+		font-size: 16.5px;
+	}
+}
+
 
 
 /*----------ESTILOS PARA LOS LINKS QUE YA HAN SIDO VISITADOS ----------*/
@@ -1238,43 +1332,6 @@ a:visited {
 	position: absolute;
 }
 
-
-
-/*
-.hero-btn:hover{
-	border: 1px solid black;
-	opacity: 0.7;
-	background: black;
-	transition: 1s;
-}
-*/
-/*
-.boxContain{
-	position: absolute;
-	top: 47%;
-	left: 39%;
-	right: 41%;
-	background-color: #2e2e2e;
-	opacity: 0.8;
-	padding: 1.5%;
-
-}
-
-.textContact{
-	position: absolute;
-	font-size: xxx-large;
-	color: #F13943;
-	opacity: 0.98 !important;
-	left: 40%;
-	top: 45%;
-	/*
-	width: 100%;
-	margin: 0 auto;
-	width: 300px;
-	height: 50px;
-	/*
-}
-*/
 .row-Contact{
 	display: flex;
 }
@@ -1321,8 +1378,6 @@ a:visited {
 
 
 .icon-group{
-	/*display: inline-block;*/
-	/*white-space: nowrap;*/
 	font-size: xxx-large;
 	color: #F13943 !important;
 	text-align: center;
@@ -1357,6 +1412,44 @@ a:visited {
 		padding-bottom: 6.2%;
 	}
 
+}
+
+@media(max-width:1024px){
+	.contact-btn{
+		top: 35%;
+		left: 41% !important;
+		font-size: 35px;
+	}
+}
+
+@media(max-width:800px){
+	.contact-btn{
+		top: 30%;
+		left: 40% !important;
+		font-size: 25px;
+	}
+}
+
+@media(max-width:450px){
+	.contact-btn{
+		left: 41% !important;
+	}
+}
+
+@media(max-width:400px){
+	.contact-btn{
+		left: 39% !important;
+	}
+
+	.contact-btn.contacto{
+		left: 35% !important;
+	}
+}
+
+@media(max-width:350px){
+	.contact-btn{
+		left: 38% !important;
+	}
 }
 
 .right-Contact{
@@ -1400,10 +1493,20 @@ a:visited {
 	padding: 1%;
 }
 
+.Cform{
+	width:630px; 
+	height:400px;
+}
+
 @media(max-width:1440px){
 	.divMap{
 		height: 400px;
 		width: 620px;
+	}
+
+	.Cform{
+		width: 470px;
+		height: 380px;
 	}
 }
 
@@ -1416,6 +1519,35 @@ a:visited {
 
 	.secondTitleContact{
 		font-size: 25px;
+	}
+
+	.Cform{
+		height: 420px;
+		width: 450px;
+	}
+}
+
+@media(max-width:500px){
+	.Cform{
+		width: 430px;
+	}
+}
+
+@media(max-width:400px){
+	.Cform{
+		width: 390px;
+	}
+}
+
+@media(max-width:370px){
+	.Cform{
+		width: 375px;
+	}
+}
+
+@media(max-width:350px){
+	.Cform{
+		width: 330px;
 	}
 }
 
