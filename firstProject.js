@@ -45,6 +45,31 @@ function showSlides(n) {
 
 /*------------------FINISH slideshow W3-----------------------*/
 
+/*----------------TRANSICION PRODUCTOS---------------
+const left = document.querySelector('.left-Modena');
+const right = document.querySelector('.right-Modena');
+const container = document.querySelector('.container');
+
+left.addEventListener('mouseenter',() => {
+  container.classList.add('hover-left');
+});
+
+left.addEventListener('mouseleave',() => {
+  container.classList.remove('hover-left');
+});
+
+right.addEventListener('mouseenter',() => {
+  container.classList.add('hover-right');
+});
+
+right.addEventListener('mouseleave',() => {
+  container.classList.remove('hover-right');
+});
+-------------------------------------------------*/
+
+
+
+
 
 /*
 

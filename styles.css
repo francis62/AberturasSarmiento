@@ -1625,3 +1625,154 @@ a:link{
 	justify-content: center;
 }
 
+/*-------------------------------ESTILOS DE PRODUCTOS.HTML-----------------------------------------*/
+
+/*----------LAYOUT COLUMNAS LINEA MODENA---------*/
+.row-containerLineaModena{
+	display: flex;
+}
+
+.column-ProductOne{
+	float: left;
+	padding-top: 7%;
+	padding-bottom: 7%;
+
+}
+
+.left-Modena{
+	width: 33%;
+	background-color: #F13943;
+
+}
+
+.text-Modena{
+	color: white;
+}
+
+.right-Modena{
+	width: 67%;
+	text-align: center;
+}
+
+.firstTitle{
+	text-align: right;
+	font-size: 110px;
+	color: #333333;
+}
+
+.firstSubtitle{
+	text-align: left;
+	font-size: 100px;
+	color: #e0e0e0;
+}
+
+.principalText{
+	text-align: center;
+	font-size: 25px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	margin-bottom: 4%;
+
+	border: 1px solid white;
+	box-shadow: 1px 10px 50px black;
+
+}
+
+
+/*-----------LAYOUT COLUMNAS LINEA A40----------*/
+.row-containerLineaA40{
+	display: flex;
+	box-shadow: 5px 10px 50px #F13943;
+	margin-top: 4%;
+}	
+
+.column-ProductTwo{
+	float: left;
+	padding-top: 7%;
+	padding-bottom: 7%;
+}
+
+.left-A40{
+	width: 67%;
+	text-align: center;
+}
+
+.right-A40{
+	width: 33%;
+	background-color: #F13943;
+}
+/*
+.text-A40{
+	text-align: right;
+}
+*/
+.secondTitle{
+	text-align: right;
+	font-size: 110px;
+	color: #333333 ;
+}
+
+.secondSubtitle{
+	text-align: left;
+	font-size: 100px;
+	color: #e0e0e0;
+}
+
+.rowModena{
+	display: flex;
+}
+
+.rowA40{
+	display: flex;
+}	
+
+.column-Caracteristicas{
+	float: left;
+	width: 50%;
+	padding-left: 5%;
+	padding-right: 4%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.column-Tipologias{
+	float: left;
+	width: 50%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.separator.Caracteristicas{
+	background-color: #4A4A4A;
+	height: 2px;
+	width: 60%;
+	margin-bottom: 2%;
+}
+
+.separator.Tipologias{
+	background-color: #4A4A4A;
+	height: 2px;
+	width: 75%;
+	margin-bottom: 2%;
+}
+
+.imageModenaUno{
+	max-width: 20rem;
+}
+
+.imageModenaDos{
+	max-width: 20rem;
+}
+
+.imageA40Uno{
+	max-width: 25rem;
+}
+
+.imageA40Dos{
+	max-width: 25rem;
+}
