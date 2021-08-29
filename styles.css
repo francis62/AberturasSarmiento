@@ -1323,7 +1323,35 @@ a:visited {
 	text-decoration: none;
 	border: 1px solid black;
 	text-align: center;
-	left: 42.5%;
+	left: 43%;
+	top: 40%;
+	padding: 12px 34px;
+	font-size: 45px;
+	background: black;
+	opacity: 0.85;
+	position: absolute;
+}
+
+.contact-btn.producto{
+	left: 41%;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid black;
+	text-align: center;
+	top: 40%;
+	padding: 12px 34px;
+	font-size: 45px;
+	background: black;
+	opacity: 0.85;
+	position: absolute;
+}
+
+.contact-btn.contacto{
+	left: 39.5%;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid black;
+	text-align: center;
 	top: 40%;
 	padding: 12px 34px;
 	font-size: 45px;
@@ -1395,8 +1423,16 @@ a:visited {
 
 @media(max-width:1366px){
 	.contact-btn{
-		left: 37%;
+		left: 42%;
 		top: 37%;
+	}
+
+	.contact-btn.contacto{
+		left: 38%;
+	}
+
+	.contact-btn.producto{
+		left: 41%;
 	}
 
 	.titlesContact{
@@ -1450,6 +1486,11 @@ a:visited {
 	.contact-btn{
 		left: 38% !important;
 	}
+/*
+	.contact-btn.producto{
+		left: ;
+	}
+	*/
 }
 
 .right-Contact{
