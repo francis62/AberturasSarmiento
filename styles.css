@@ -896,7 +896,7 @@ COMO CONTROLAR EL COLOR DE CADA BORDE INSET Y OUTSET
 
 .Gform{
 	width: 710px; 
-	height: 900px;
+	height: 1100px;
 }
 
 
@@ -1406,7 +1406,7 @@ a:visited {
 
 
 .icon-group{
-	font-size: xxx-large;
+	font-size: 90px;
 	color: #F13943 !important;
 	text-align: center;
 	
@@ -1448,6 +1448,10 @@ a:visited {
 		padding-bottom: 6.2%;
 	}
 
+	.icon-group{
+		font-size: 70px;
+	}
+
 }
 
 @media(max-width:1024px){
@@ -1481,6 +1485,10 @@ a:visited {
 @media(max-width:450px){
 	.contact-btn{
 		left: 41% !important;
+	}
+
+	.icon-group{
+		font-size: 70px;
 	}
 }
 
@@ -1531,7 +1539,7 @@ a:visited {
 
 .divMap{
 	padding-left: 5%;
-	height: 300px;
+	height: 400px;
 	width: 800px;
 }
 
@@ -1548,7 +1556,7 @@ a:visited {
 
 .Cform{
 	width:630px; 
-	height:400px;
+	height:450px;
 }
 
 @media(max-width:1440px){
@@ -1715,6 +1723,7 @@ a:link{
 
 .text-Modena{
 	color: white;
+	padding-top: 5%;
 }
 
 .right-Modena{
@@ -1726,12 +1735,18 @@ a:link{
 	text-align: right;
 	font-size: 110px;
 	color: #333333;
+	padding-right: 5%;
+	line-height: 1.5;
+	vertical-align: middle;
 }
 
 .firstSubtitle{
 	text-align: left;
 	font-size: 100px;
 	color: #e0e0e0;
+	padding-left: 5%;
+	line-height: 1.5;
+	vertical-align: middle;
 }
 
 .principalText{
@@ -1772,21 +1787,27 @@ a:link{
 	width: 33%;
 	background-color: #F13943;
 }
-/*
+
 .text-A40{
-	text-align: right;
+	padding-top: 15%;
 }
-*/
+
 .secondTitle{
 	text-align: right;
 	font-size: 110px;
 	color: #333333 ;
+	padding-right: 13%;
+	line-height: 1.5;
+	vertical-align: middle;
 }
 
 .secondSubtitle{
 	text-align: left;
 	font-size: 100px;
 	color: #e0e0e0;
+	padding-left: 13%;
+	line-height: 1.5;
+	vertical-align: middle;
 }
 
 .rowModena{
@@ -1795,6 +1816,7 @@ a:link{
 
 .rowA40{
 	display: flex;
+	padding-bottom: 3%;
 }	
 
 .column-Caracteristicas{
@@ -1843,6 +1865,28 @@ a:link{
 
 .imageA40Dos{
 	max-width: 25rem;
+}
+
+@media(max-width:1366px){
+	.imageModenaUno{
+		max-width: 17rem;
+	}
+	
+	.imageModenaDos{
+		max-width: 16rem;
+	}
+	
+	.imageA40Uno{
+		max-width: 18rem;
+	}
+	
+	.imageA40Dos{
+		max-width: 18rem;
+	}
+
+	.rowA40{
+		padding-bottom: 5%;
+	}
 }
 
 
@@ -1897,20 +1941,32 @@ a:link{
 }
 
 @media(max-width:700px){
+	.text-A40{
+		padding: 0%;
+	}
+
+	.text-Modena{
+		padding: 0%;
+	}
+
 	.firstSubtitle{
 		font-size: 70px;
+		padding: 0%;
 	}
 
 	.firstTitle{
 		font-size: 80px;
+		padding: 0%;
 	}
 
 	.secondSubtitle{
 		font-size: 70px;
+		padding: 0%;
 	}
 
 	.secondTitle{
 		font-size: 80px;
+		padding: 0%;
 	}
 
 	.imageModenaUno{
@@ -2010,4 +2066,234 @@ a:link{
 	.imageA40Dos{
 		max-width: 9rem;
 	}
+}
+
+/*-------------------------------ESTILOS DE EMPRESA.HTML-----------------------------------------*/
+.companyPresent{
+	background-color: rgba(241, 57, 67, 0.9);
+
+	margin-top: 12%;
+	margin-bottom: 15%;
+
+	margin-right: 5%;
+	margin-left: 5%;
+
+	box-shadow: 25px 30px #2e2e2e;
+	/*
+	border: 1px solid #717171;
+	box-shadow: 1px 10px 50px black;
+	*/
+}
+
+.primerTexto{
+	color: #2e2e2e; 
+	font-size: 50px; 
+	font-weight: 10; 
+	padding: 5%;
+	text-align: center;
+}
+
+.details{
+	font-weight: bolder;
+}
+
+.logoDivisor{
+	background-image: url("images/Empresa/frenteTres.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+/*
+.test-overly {
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  }
+*/
+/*
+.test-overly {
+	background: rgba(0, 0, 0, 0.80);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+*/
+.rowCompany{
+	display: flex;
+}
+
+.columnMission{
+	float: left;
+	width: 50%;
+	padding: 10%;
+	text-align: center;
+}
+
+.columnVision{
+	float: left;
+	width: 50%;
+	padding: 10%;
+	text-align: center;
+}
+
+.nuestraCompany{
+	color: #2e2e2e; 
+	font-size: 40px;
+}
+
+.misionCompany{
+	color: #F13943; 
+	font-size: 42px;
+}
+
+.fa-crosshairs{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font-size: 100px;
+	color: #F13943;
+}
+
+.fa-sort-amount-up{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font-size: 100px;
+	color: #F13943;
+}
+
+.misionText{
+	font-size: 25px;
+	text-align: justify;
+}
+
+.visionText{
+	font-size: 25px;
+	text-align: justify;
+}
+
+.separator-Empresa{
+	background-color: #2e2e2e;
+	height: 6px;
+	width: 100%;
+	margin-top: 15px;
+}
+
+@media(max-width:700px){
+	.rowCompany{
+		flex-direction: column;
+	}	
+
+	.columnMission{
+		width: 100%;
+		padding-top: 20%;
+	}
+
+	.columnVision{
+		width: 100%;
+		padding-bottom: 20%;
+	}
+
+	.misionText{
+		text-align: center;
+	}
+
+	.visionText{
+		text-align: center;
+	}
+
+	.columnMission{
+		text-align: center;
+	}
+}
+
+
+.footer-left-text{
+	color: white;
+	font-size: 50px;
+	text-align: left;
+}
+
+.footer-detail-text{
+	color: #2e2e2e;
+	font-size: 53px;
+	text-align: left;
+}
+
+@media(max-width:1366px){
+	.companyPresent{
+		margin-top: 15%;
+		margin-bottom: 20%;
+	
+		margin-right: 9%;
+		margin-left: 9%;
+	
+	}
+
+	.primerTexto{
+		font-size: 40px; 
+		font-weight: 10; 
+	}
+
+	.footer-left-text{
+		font-size: 45px;
+	}
+	
+	.footer-detail-text{
+		font-size: 50px;
+	}
+
+
+}
+
+@media(max-width:700px){
+	.primerTexto{
+		font-size: 23px; 
+		text-align: center;
+	}
+
+	.footer-left-text{
+		text-align: center;
+	}
+	
+	.footer-detail-text{
+		text-align: center;
+	}
+}
+
+@media(max-width:350px){
+	.visionText{
+		font-size: 20px;
+	}
+
+	.misionText{
+		font-size: 20px;
+	}
+
+	.nuestraCompany{
+		font-size: 30px;
+	}
+
+	.misionCompany{
+		font-size: 30px;
+	}
+
+	.fa-crosshairs{
+		font-size: 50px;
+	}
+	
+	.fa-sort-amount-up{
+		font-size: 50px;
+	}
+
+	.footer-left-text{
+		font-size: 35px;
+	}
+	
+	.footer-detail-text{
+		font-size: 40px;
+	}
+	
 }
