@@ -8,6 +8,10 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
+html{
+	scroll-behavior: smooth;
+}
 /*
 .img{
 	width: 100%;
@@ -70,6 +74,14 @@ img { max-width: 100%; height: auto; }
 	padding-left: 0.5rem;
 }
 */
+/*
+.firstControlPage{
+	overflow: auto;
+
+	position: fixed;
+	width: 100%;
+}
+*/
 /*----------ICONO DE LLAMADA DEL FOOTER----------*/
 .controlCall{
 	color: #363636 !important; 
@@ -122,7 +134,7 @@ img { max-width: 100%; height: auto; }
 	min-height: 0vh;
 	/*En celulares directamente saco el footer y para que puedan ver los contactos se tienen
 	que redireccionar a la parte de contacto dentro de la navbar*/
-	position: relative;
+	/*position: relative;*/
 	background-size: cover;
 	background-position: center;
 }
@@ -136,6 +148,17 @@ img { max-width: 100%; height: auto; }
 	justify-content: space-between;
 	align-items: center;
 }
+
+.nav-placeholder{
+	margin: 0 0 0 0;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 
 .iconMain{
 	min-height: 64px;
@@ -184,7 +207,6 @@ img { max-width: 100%; height: auto; }
 .navbar .fas{
 	display: none;
 }
-
 
 /*--------------------------PARTE DE RESPONSIVENESS------------------------------*/
 @media(max-width: 700px){
@@ -260,6 +282,24 @@ img { max-width: 100%; height: auto; }
 	text-decoration: none;
 }
 */
+
+/*--------LAYOUR DEL BOTON PARA ARRIBA------------*/
+.fa-arrow-up{
+	position: fixed;
+	width:50px;
+	height:50px;
+	bottom:45px;
+	right: 120px;
+	background-color: #2e2e2e;
+	color:white;
+	border-radius:50px;
+	text-align: center;
+    font-size: 40px;
+	box-shadow: 2px 2px 3px #2e2e2e;
+    z-index: 50;
+	padding-top: 5px;
+}
+
 /*----------LAYOUT DEL BOTON DE WHATSAPP----------*/
 .float{
 	position: fixed;
@@ -291,6 +331,19 @@ img { max-width: 100%; height: auto; }
 	width:50px;
 	height:50px;
 	}
+
+	.fa-arrow-up{
+		width:50px;
+		height:50px;
+		bottom:10px;
+		right: 80px;
+
+		border-radius:50px;
+
+		font-size: 30px;
+
+		padding-top: 10px;
+	}
 }
 
 @media(max-width:700px){
@@ -300,6 +353,12 @@ img { max-width: 100%; height: auto; }
 		font-size: 32px;
 		bottom: 5%;
 		right: 2%;
+	}
+
+	.fa-arrow-up{
+		visibility: hidden;
+		clear: both;
+		display: none;
 	}
 }
 
@@ -373,6 +432,7 @@ img{
 
 /*----------Slideshow container----------*/
 .slideshow-container {
+	/*top: 150px;*/
   max-width: 100%;
   position: relative;
   margin: auto;
@@ -416,6 +476,26 @@ img{
   width: 100%;
   text-align: center;
   opacity: 0.75;
+
+  
+  overflow: hidden;
+	white-space: nowrap;
+	border-right: .15em solid #F13943;
+	margin: 0 auto;
+	animation: 
+		typing 2s steps(550, end),
+		blink-caret .75s step-end infinite;
+		
+}
+
+@keyframes typing{
+	from { width: 50%;}
+	to { width: 100%;}
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: #F13943; }
 }
 
 /*----------- LOS PUNTOS INDICADORES DE IMAGEN -----------*/
@@ -497,7 +577,35 @@ img{
 	padding-bottom: 150px;
 	background-color: white;
 }
+/*
+.one{
+	overflow: hidden;
+	white-space: nowrap;
+}
 
+.one:first-of-type{
+	animation: showup 7s;
+}
+
+one:last-of-type {
+	width:0px;
+	animation: reveal 7s;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes reveal {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+*/
 /*----------LINEA DIVISORA DE LA PRIMER COLUMNA ----------*/
 .separator.small.right{
 	background-color: #f13943;
@@ -517,6 +625,7 @@ img{
 /*----------ISOTIPO DENTRO DE LA SEGUNDA COLUMNA ----------*/
 .imageRowIso{
 	opacity: 0.75;
+	width: 95%;
 }
 
 @media(max-width: 1366px){
