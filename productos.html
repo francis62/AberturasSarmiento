@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Aberturas Sarmiento S.A</title>
+        <title>Aberturas Sarmiento</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
@@ -27,7 +27,10 @@
 
         <script src="https://kit.fontawesome.com/f378aa0dff.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+
         <footer class="controlPaddingFooter" id="firstSection">
             <div class="navbar-menu">
                 <div class="navbar-start">
@@ -78,12 +81,12 @@
         <!--<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">-->
         <nav class="navbar" id="navbar">
 
-            <a href="https://aberturassarmiento.com/"> 
+            <a href="https://www.aberturassarmiento.com/"> 
                 <img src="images/Logo/LOGO GRIS(sin fondo) (2).png " class="iconMain"><!--  <img src="images/Logo/logoLetras.jpeg" class="iconMainLetras">-->
             </a>
             
-            <div class="navbar-end" id="navbar">
-              <i class="fas fa-times" onclick="hiddenMenu()"></i>
+            <div class="navbar-end" id="navbarHamburger">
+              <i class="fas fa-times" onclick="ocultarMenu()"></i>
                 <ul>
                   <li><a href="index.html">HOME</a></li>
                   <li><a href="empresa.html">EMPRESA</a></li>
@@ -92,7 +95,7 @@
                 </ul>
               
             </div>
-          <i class="fas fa-bars" onclick="showMenu()"></i>  
+          <i class="fas fa-bars" onclick="mostrarMenu()"></i>  
         </nav>
 
         <div class="imageContact">
@@ -102,19 +105,22 @@
         </div>
 
 
-        <div class="row-containerLineaModena">
-            <div class="column-ProductOne left-Modena">
-                <div class="text-Modena">
-                    <h3 class="firstSubtitle">Línea</h3>
-                    <h1 class="firstTitle">Módena</h1>
+        <section class="scroll-container">
+            <div class="row-containerLineaModena">
+                <div class="column-ProductOne left-Modena scroll-element js-scroll slide-left">
+                    <div class="text-Modena">
+                        <h3 class="firstSubtitle">Línea</h3>
+                        <h1 class="firstTitle">Módena</h1>
+                    </div>
+                </div>
+
+                <div class="column-ProductOne right-Modena scroll-element js-scroll fade-in">
+                    <img src="images/Modena/Modena1-Abrir.jpg" class="imageModenaUno"> 
+                    <img src="images/Modena/Modena1-Corrediza.jpg" class="imageModenaDos">
                 </div>
             </div>
+        </section>
 
-            <div class="column-ProductOne right-Modena">
-                <img src="images/Modena/Modena1-Abrir.jpg" class="imageModenaUno"> 
-                <img src="images/Modena/Modena1-Corrediza.jpg" class="imageModenaDos">
-            </div>
-        </div>
 
         <div class="textModena" style="background-color: white;">
             <p class="principalText"> 
@@ -155,7 +161,7 @@
                         <li>- Ventana y puerta corrediza corte a 45° </li>
                         <li>- Ventana y puerta corrediza corte a 90° </li>
                         <li>- Ventana banderola </li>
-                        <li>- Ventana vendiluz </li>
+                        <li>- Ventana ventiluz </li>
                         <li>- Ventana de abrir y oscilobatiente </li>
                         <li>- Ventana desplazable </li>
                         <li>- Ventana guillotina </li>
@@ -167,19 +173,21 @@
             
         </div>
 
-        <div class="row-containerLineaA40">
-            <div class="column-ProductTwo left-A40">
-                <img src="images/A40/A40-45--ª-(esquinero).jpg" class="imageA40Uno">
-                <img src="images/A40/A40-90--ª-(esquinero).jpg" class="imageA40Dos">
-            </div>
+        <section class="scroll-container">
+            <div class="row-containerLineaA40">
+                <div class="column-ProductTwo left-A40 scroll-element js-scroll fade-in">
+                    <img src="images/A40/A40-45--ª-(esquinero).jpg" class="imageA40Uno">
+                    <img src="images/A40/A40-90--ª-(esquinero).jpg" class="imageA40Dos">
+                </div>
 
-            <div class="column-ProductTwo right-A40">
-                <div class="text-A40">
-                    <h3 class="secondSubtitle">Línea</h3>
-                    <h1 class="secondTitle">A40</h1>
+                <div class="column-ProductTwo right-A40 scroll-element js-scroll slide-right">
+                    <div class="text-A40">
+                        <h3 class="secondSubtitle">Línea</h3>
+                        <h1 class="secondTitle">A40</h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="textA40" style="background-color: white;">  
             <p class="principalText">
@@ -218,7 +226,7 @@
                         <li>- Ventana y puerta corrediza corte a 45° </li>
                         <li>- Ventana y puerta corrediza corte a 90° </li>
                         <li>- Ventana banderola </li>
-                        <li>- Ventana vendiluz </li>
+                        <li>- Ventana ventiluz </li>
                         <li>- Ventana de abrir y oscilobatiente </li>
                         <li>- Ventana desplazable </li>
                         <li>- Ventana guillotina </li>
@@ -235,10 +243,30 @@
         </div>
         -->
 
-        <section class="footerLast">
+        <section class="scroll-container">
+            <div class="row-DVH">
+                <div class="column-DVH left-DVH scroll-element js-scroll slide-left" style="background-color:#F13943;">
+                    <h3 class="firstSubtitle">Vidrios y</h3>
+                    <h1 class="firstTitle">DVH</h1>
+                </div>
+
+                <div class="column-DVH right-DVH scroll-element js-scroll fade-in" style="background-color:rgb(255, 255, 255);">
+                    <h2>Column 2</h2>
+                    <p>Some text..</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="textModena" style="background-color: white;">
+            <p class="principalText"> 
+                Para ofrecer un servicio integral, fabricamos nuestros propios vidrios y DVH.
+                El DVH es tanto tanto tanto
+            </p>   
+        </div>
+        <section class="footerLast scroll-container">
             <div class="row-Footer">
       
-              <div class="column-Footer logoAS left">
+              <div class="column-Footer logoAS left scroll-element js-scroll slide-left">
                 <p class="footer-left-text">
                     Excelencia en <span class="footer-detail-text">aberturas.</span>
                 </p>
@@ -291,7 +319,7 @@
                 </div>
               </div>
             </div>
-          </section>
+        </section>
 
         <a href="#firstSection">
         <i class="fas fa-arrow-up"></i>
@@ -301,7 +329,102 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     
-        <script src="thirdFunction.js"></script>
+        <!--<script src="firstProject.js"></script>-->
 
+        </div>
+        <script>
+            var navbarHamburger = document.getElementById("navbarHamburger");
+      
+            function mostrarMenu(){
+                navbarHamburger.style.right = "0";
+            }
+      
+            function ocultarMenu(){
+                navbarHamburger.style.right = "-200px";
+            }
+        </script>
+        <script>
+            var myVar;
+      
+            function myFunction() {
+              myVar = setTimeout(showPage, 200);
+            }
+      
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+          </script>
+        <!--
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+
+            jQuery(document).ready(function(){
+            jQuery("navbar").wrap('<div class="nav-placeholder"></div>');
+            jQuery(".nav-placeholder").height(jQuery("navbar").outerHeight());
+            });
+        </script>
+        -->
     </body>
 </html>
+
+
+<!--
+<section class="scroll-container">
+        <div class="scroll-element js-scroll fade-in">
+
+        </div>
+        
+        <div class="scroll-caption">
+                This animation fades in.
+        </div>
+</section>
+
+
+
+<section class="scroll-container">
+        <div class="scroll-element js-scroll fade-in-bottom">
+
+        </div>
+        
+        <div class="scroll-caption">
+                This animation slides in to the top.
+        </div>
+</section>
+
+
+
+<section class="scroll-container">
+        <div class="scroll-element js-scroll slide-left">
+
+        </div>
+
+        <div class="scroll-caption">
+                This animation slides in from the left.
+        </div>
+</section>
+
+
+
+
+<section class="scroll-container">
+        <div class="scroll-element js-scroll slide-right">
+
+        </div>
+
+        <div class="scroll-caption">
+                This animation slides in from the right.
+        </div>
+</section>
+-->

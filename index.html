@@ -26,7 +26,10 @@
 
         <script src="https://kit.fontawesome.com/f378aa0dff.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="myFunction()" style="margin:0;">
+      <div id="loader"></div>
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+      
 
       <section class="firstControlPage" id="firstSection">
         <footer class="controlPaddingFooter">
@@ -82,8 +85,8 @@
               <img src="images/Logo/LOGO GRIS(sin fondo) (2).png " class="iconMain">
           </a>
           
-          <div class="navbar-end" id="navbar">
-            <i class="fas fa-times" onclick="hiddenMenu()"></i>
+          <div class="navbar-end" id="navbarHamburger">
+            <i class="fas fa-times" onclick = "ocultarMenu()"></i>
               <ul>
                 <li><a href="index.html" style="color: #F13943;">HOME</a></li>
                 <li><a href="empresa.html">EMPRESA</a></li>
@@ -92,107 +95,37 @@
               </ul>
             
           </div>
-        <i class="fas fa-bars" onclick="showMenu()"></i> 
+        <i class="fas fa-bars" onclick="mostrarMenu()"></i> 
       </nav>
       </section>
 
-      <!--
-        <footer class="controlPaddingFooter">
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <p class="controlCall">
-                                <span class="icon">
-                                    <i class="fas fa-phone-square" aria-hidden="true"></i>
-                                </span>
-                                <span>  +54 9 261 750-1072  |</span>
-                            </p>
-
-                            <p class="controlEmail">
-                                <span class="icon">
-                                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                                </span>
-                                <span>  ventas@aberturassarmiento.com  |</span>
-                            </p>
-                            <p class="controlUbication">
-                                <span class="icon">
-                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                                </span>
-                                <span>  Sarmiento 2957, Luzuriaga, Mendoza  |</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="navbar-end" >
-                    <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <a class="controlIconInstagram" href="https://www.instagram.com/aberturas.sarmiento" target="_blank">
-                                <span class="icon">
-                                    <i class="fab fa-instagram-square"></i> 
-                                </span>
-                            </a>
-
-                            <a class="controlIconFacebook" href="https://www.fb.me/aberturassarmiento.mendoza" target="_blank">
-                                <span class="icon">
-                                    <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        -->
-        <!--<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">-->
-        <!--
-        <nav class="navbar">
-
-            <a href="https://aberturassarmiento.com/"> 
-                <img src="images/Logo/LOGO GRIS(sin fondo) (2).png " class="iconMain">
-            </a>
-            
-            <div class="navbar-end" id="navbar">
-              <i class="fas fa-times" onclick="hiddenMenu()"></i>
-                <ul>
-                  <li><a href="index.html" style="color: #F13943;">HOME</a></li>
-                  <li><a href="empresa.html">EMPRESA</a></li>
-                  <li><a href="productos.html">PRODUCTOS</a></li>
-                  <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-              
-            </div>
-          <i class="fas fa-bars" onclick="showMenu()"></i>  
-        </nav>
-        -->
 <!-------------------START slideshow secondOne(W3)----------------->
-<div class="slideshow-container">
+  <div class="slideshow-container">
 
-  <div class="mySlides fade">
-    <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-6527069 (1).jpg" style="width:100%">
-    <!--<p class="subtitle is-2 textImage">-->
-    <p class="textImage">
-      Excelencia en aberturas
-    </p>
-  </div>
-  
-  <div class="mySlides fade">
-    <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-7061678.jpg" style="width:100%">
-    <p class="textImage">
-      Excelencia en aberturas
-    </p>
-  </div>
-  
-  <div class="mySlides fade">
-    <img src="images/Aberturas/1920x700/pexels-skylar-kang-6045336.jpg" style="width:100%">
-    <p class="textImage">
-      Excelencia en aberturas
-    </p>
-  </div>
-  
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="mySlides fade">
+      <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-6527069 (1).jpg" style="width:100%">
+      <!--<p class="subtitle is-2 textImage">-->
+      <p class="textImage">
+        Excelencia en aberturas
+      </p>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-7061678.jpg" style="width:100%">
+      <p class="textImage">
+        Excelencia en aberturas
+      </p>
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="images/Aberturas/1920x700/pexels-skylar-kang-6045336.jpg" style="width:100%">
+      <p class="textImage">
+        Excelencia en aberturas
+      </p>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   
   </div>
   <br>
@@ -209,11 +142,11 @@
 
 
   
-    <section class="sectionTwo">
+    <section class="sectionTwo scroll-container">
       <div class="row-One">
-        <div class="column-One left-One">
+        <div class="column-One left-One scroll-element js-scroll slide-left">
           <h3 class="subtitle is-3 one">
-            Somos una empresa dedicada a la fabricación e instalación de aberturas de aluminio.
+            Somos una empresa dedicada a la fabricación e instalación de aberturas de aluminio y vidrio.
             <div class="separator  small right"></div>
           </h3>
           <br>
@@ -227,14 +160,14 @@
           </h4>       
         </div>
 
-        <div class="column-One right-One">
+        <div class="column-One right-One scroll-element js-scroll slide-right">
           <img class="imageRowIso" src="images/Logo/LOGO GRIS(sin fondo) (3).png" style="text-align: center;">
         </div>     
       </div>
     </section>
     
-    <section class="sectionTwo">
-      <div class="row-Two" style="background-color: #2e2e2e;">
+    <section class="sectionTwo scroll-container">
+      <div class="row-Two scroll-element js-scroll fade-in" style="background-color: #2e2e2e;">
         <div class="column-Two" style="color: white; text-align: center;">
           <h5 class="has-text-white subtitle is-4 two" style="margin-bottom: 2%;">
             <span class="iconChat">
@@ -286,28 +219,28 @@
       </div>
     </section>
     
-    <section class="sectionThird">
+    <section class="sectionThird scroll-container">
       <div class="row-Third" style="background-color: white;">
-        <div class="column-Third left-Third">
+        <div class="column-Third left-Third scroll-element js-scroll slide-left">
           <h4 class="subtitle is-4 third" style="text-align: left;">
             <strong>Acércate a nuestro showroom</strong> para conocer todos nuestros productos y apreciar la calidad de cerca.
             <div class="separator  small left-Third"></div>
           </h4>
         </div>
 
-        <div class="column-Third right-Third">
-          <img  class="imageShowroom" src="images/Aberturas/as new/resized1.png">
+        <div class="column-Third right-Third scroll-element js-scroll slide-right">
+          <img  class="imageShowroom" src="images/Aberturas/as new/showroom.jpg">
         </div>
       </div>
     </section>
 
-    <section class="sectionFabrica">
+    <section class="sectionFabrica scroll-container">
       <div class="row-Fabrica" style="background-color: white;">
-        <div class="column-Fabrica left-Fabrica">
+        <div class="column-Fabrica left-Fabrica scroll-element js-scroll slide-left">
             <img class="imageFabrica" src="images/Aberturas/as new/resized2.jpg">  
         </div>
 
-        <div class="column-Fabrica right-Fabrica">
+        <div class="column-Fabrica right-Fabrica scroll-element js-scroll slide-right">
           <h4 class="subtitle is-4 Fabrica" style="text-align: right; padding-right: 20px;">
             Este es el lugar donde nuestros trabajadores <strong>elaboran todos los productos con maquinaria italiana.</strong>
             <div class="separator  small left-Third Fabrica"></div>
@@ -316,8 +249,10 @@
       </div>
     </section>
     
-    <section class="form">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2zomA1VmaVSfgUe1tj8VB2dqN6O3XaG0BqC986I_MBfCgNQ/viewform?embedded=true" class="Gform" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>  
+    <section class="form scroll-container">
+      <div class="scroll-element js-scroll fade-in-bottom">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf2zomA1VmaVSfgUe1tj8VB2dqN6O3XaG0BqC986I_MBfCgNQ/viewform?embedded=true" class="Gform" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>  
+      </div>
     </section>
 
     <!--
@@ -402,7 +337,7 @@
     <section class="footerLast">
       <div class="row-Footer">
 
-        <div class="column-Footer logoAS left">
+        <div class="column-Footer logoAS left scroll-element js-scroll slide-left">
           <img class="logoAS" src="images/Logo/LOGO GRIS(sin fondo) (1).png">
         </div>
   
@@ -477,19 +412,98 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="firstProject.js"></script>
-
+    <!--<script src="firstProject.js"></script>-->
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 
     <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
 
-        
+    
+    <!--<script src="firstProject.js"></script>-->
+
+    
+    <script>
+      var navbarHamburger = document.getElementById("navbarHamburger");
+
+      function mostrarMenu(){
+          navbarHamburger.style.right = "0";
+      }
+
+      function ocultarMenu(){
+          navbarHamburger.style.right = "-200px";
+      }
+    </script>
+    
+
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 200);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+    <!--
 		<script>
-		bulmaCarousel.attach('#carousel-demo', {
-			slidesToScroll: 1,
-			slidesToShow: 1
-		});
+      
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      window.addEventListener("resize", function(){
+        if (window.matchMedia("min-width:700px").matches){
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+        }
+    
+        jQuery(document).ready(function(){
+        jQuery("navbar").wrap('<div class="nav-placeholder"></div>');
+        jQuery(".nav-placeholder").height(jQuery("navbar").outerHeight());
+        });
+      })
+      
 		</script>
+    -->
     </body>
 </html>
 

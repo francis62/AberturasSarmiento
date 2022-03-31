@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Aberturas Sarmiento S.A</title>
+        <title>Aberturas Sarmiento</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
@@ -27,7 +27,11 @@
 
         <script src="https://kit.fontawesome.com/f378aa0dff.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="myFunction()" style="margin:0;">
+      <div id="loader"></div>
+
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+      
         <footer class="controlPaddingFooter">
             <div class="navbar-menu">
                 <div class="navbar-start">
@@ -78,12 +82,12 @@
         <!--<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">-->
         <nav class="navbar" id="navbar">
 
-            <a href="https://aberturassarmiento.com/"> 
+            <a href="https://www.aberturassarmiento.com/"> 
                 <img src="images/Logo/LOGO GRIS(sin fondo) (2).png " class="iconMain"><!--  <img src="images/Logo/logoLetras.jpeg" class="iconMainLetras">-->
             </a>
             
-            <div class="navbar-end" id="navbar">
-              <i class="fas fa-times" onclick="hiddenMenu()"></i>
+            <div class="navbar-end" id="navbarHamburger">
+              <i class="fas fa-times" onclick="ocultarMenu()"></i>
                 <ul>
                   <li><a href="index.html">HOME</a></li>
                   <li><a href="empresa.html">EMPRESA</a></li>
@@ -92,53 +96,123 @@
                 </ul>
               
             </div>
-          <i class="fas fa-bars" onclick="showMenu()"></i>  
+          <i class="fas fa-bars" onclick="mostrarMenu()"></i>  
         </nav>
 
-        <div class="imageContact">
-          <img src="images/Aberturas/1920x/252526065_94208f42f8_o.jpg" style="opacity: 0.75; filter: blur(1.5px);">
-          
-          
-          <a href="" class="contact-btn contacto" style="color: #F13943;">CONTACTÁNOS</a>
-        </div>
-
-
-        <div class="row-Contact">
-          <div class="column-Contact left-Contact"> 
-              <br>
-            <h1 class="titlesContact left"><i class="fas fa-clock"></i>   Horario de atención </h1>
-            <div class="separator  contact left"></div>
-            <h2 class="subtitlesContact left">Lunes a Viernes: 09:00 - 18:00hs <br> Sabados: 09:00 - 13:00hs </h2>
+          <div class="imageContact">
+            <img src="images/Aberturas/1920x/252526065_94208f42f8_o.jpg" style="opacity: 0.75; filter: blur(1.5px);">
             
-              <br><br>
-            <h1 class="titlesContact left"><i class="fas fa-phone"></i>   Llamanos</h1>
-            <div class="separator  contact left"></div>
-            <h2 class="subtitlesContact left">+54 9 261 750-1072</h2>
             
-              <br><br>
-            <h1 class="titlesContact left">Visita nuestras redes sociales</h1>
-              <br>
-            <div class="icon-group">
-              <a href="https://www.instagram.com/aberturas.sarmiento/" target="_blank"><i class="fab fa-instagram" style="color: #F13943; padding-right: 3%;"></i></a>
-              <a href="https://www.fb.me/aberturassarmiento.mendoza" target="_blank"><i class="fab fa-facebook" style="color: #F13943; padding-left: 3%;"></i></a>
-            </div>
+            <a href="" class="contact-btn contacto" style="color: #F13943;">CONTACTÁNOS</a>
           </div>
 
+        <section class="scroll-container">
+          <div class="row-Contact scroll-element js-scroll fade-in">
+            <div class="column-Contact left-Contact"> 
+                <br>
+              <h1 class="titlesContact left"><i class="fas fa-clock"></i>   Horario de atención </h1>
+              <div class="separator  contact left"></div>
+              <h2 class="subtitlesContact left">Lunes a Viernes: 09:00 - 18:00hs <br> Sabados: 09:00 - 13:00hs </h2>
+              
+                <br><br>
+              <h1 class="titlesContact left"><i class="fas fa-phone"></i>   Llamanos</h1>
+              <div class="separator  contact left"></div>
+              <h2 class="subtitlesContact left">+54 9 261 750-1072</h2>
+              
+                <br><br>
+              <h1 class="titlesContact left">Visita nuestras redes sociales</h1>
+                <br>
+              <div class="icon-group">
+                <a href="https://www.instagram.com/aberturas.sarmiento/" target="_blank"><i class="fab fa-instagram" style="color: #F13943; padding-right: 3%;"></i></a>
+                <a href="https://www.fb.me/aberturassarmiento.mendoza" target="_blank"><i class="fab fa-facebook" style="color: #F13943; padding-left: 3%;"></i></a>
+              </div>
+          </div>
+        </section>  
+
+        <section class="scroll-container">
           <div class="column-Contact right-Contact">
             <div class="row-Contact-Middle">
-              <div class="column-Contact-Middle maps">
+              <div class="column-Contact-Middle maps scroll-element js-scroll slide-left">
                 <h1 class="secondTitleContact"><i class="fas fa-map-marker-alt"></i> Encontranos en:</h1>
                 <div class="separator  contact right"></div><br>
                 <iframe class="divMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.2460198233016!2d-68.8164502842488!3d-32.94451347911145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b8bae7de6f5%3A0xd72be7584a77514f!2sSarmiento%202957%2C%20M5513%20Maip%C3%BA%2C%20Mendoza!5e0!3m2!1sen!2sar!4v1626354773369!5m2!1sen!2sar"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>          
                 <!--Al iframe le saque esto width="800" height="300"-->
               </div>
 
-              <div class="column-Contact-Middle formulary">
+              <div class="column-Contact-Middle formulary scroll-element js-scroll slide-right">
                 <h1 class="secondTitleContact"><i class="fas fa-envelope-open"></i> Completa este formulario:</h1>
                 <div class="separator  contact right"></div>
 
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfEUcYColMf73wt-pTWUKvqa9GVjwk4NoIEOXSGV0xxqTWJXQ/viewform?embedded=true" class="Cform" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-                <!--
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer-Contact scroll-element js-scroll fade-in" style="text-align: center;">
+          <img src="images/Logo/LOGO GRIS(sin fondo) (1).png">
+        </div>
+
+
+        <a href="https://wa.me/5492617501072?text=Hola%20Aberturas%20Sarmiento,%20estoy%20interesado%20en%20realizar%20unas%20aberturas%20con%20ustedes." class="float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        
+
+        <!--<script src="firstProject.js"></script>-->
+
+      </div>
+        <script>
+          var navbarHamburger = document.getElementById("navbarHamburger");
+    
+          function mostrarMenu(){
+              navbarHamburger.style.right = "0";
+          }
+    
+          function ocultarMenu(){
+              navbarHamburger.style.right = "-200px";
+          }
+        </script>
+
+        <script>
+          var myVar;
+    
+          function myFunction() {
+            myVar = setTimeout(showPage, 200);
+          }
+    
+          function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+          }
+        </script>
+
+        <!--<script src="secondFunction.js"></script>
+        <script>
+          window.onscroll = function() {myFunction()};
+
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+          } else {
+              navbar.classList.remove("sticky");
+          }
+          }
+
+          jQuery(document).ready(function(){
+          jQuery("navbar").wrap('<div class="nav-placeholder"></div>');
+          jQuery(".nav-placeholder").height(jQuery("navbar").outerHeight());
+          });
+      </script>
+      -->
+    </body>
+</html>
+
+<!--
                 <div class="controlPaddingFormulary">
                   <div class="field is-horizontal">
                     <div class="field-body">
@@ -193,22 +267,3 @@
                   </div>
                 </div>
                 -->
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-Contact" style="text-align: center;">
-          <img src="images/Logo/LOGO GRIS(sin fondo) (1).png">
-        </div>
-
-
-        <a href="https://wa.me/5492617501072?text=Hola%20Aberturas%20Sarmiento,%20estoy%20interesado%20en%20realizar%20unas%20aberturas%20con%20ustedes." class="float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    
-        <script src="secondFunction.js"></script>
-
-    </body>
-</html>

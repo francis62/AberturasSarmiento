@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Aberturas Sarmiento S.A</title>
+        <title>Aberturas Sarmiento</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
@@ -27,7 +27,10 @@
 
         <script src="https://kit.fontawesome.com/f378aa0dff.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="myFunction()" style="margin:0;">
+      <div id="loader"></div>
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+
         <footer class="controlPaddingFooter" id="firstSection">
             <div class="navbar-menu">
                 <div class="navbar-start">
@@ -78,12 +81,12 @@
         <!--<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">-->
         <nav class="navbar" id="navbar">
 
-            <a href="https://aberturassarmiento.com/"> 
+            <a href="https://www.aberturassarmiento.com/"> 
                 <img src="images/Logo/LOGO GRIS(sin fondo) (2).png " class="iconMain"><!--  <img src="images/Logo/logoLetras.jpeg" class="iconMainLetras">-->
             </a>
             
-            <div class="navbar-end" id="navbar">
-              <i class="fas fa-times" onclick="hiddenMenu()"></i>
+            <div class="navbar-end" id="navbarHamburger">
+              <i class="fas fa-times" onclick="ocultarMenu()"></i>
                 <ul>
                   <li><a href="index.html">HOME</a></li>
                   <li><a href="empresa.html" style="color: #F13943;">EMPRESA</a></li>
@@ -92,61 +95,65 @@
                 </ul>
               
             </div>
-          <i class="fas fa-bars" onclick="showMenu()"></i>  
+          <i class="fas fa-bars" onclick="mostrarMenu()"></i>  
         </nav>
 
-        <div class="imageContact">
-            <img src="images/Aberturas/1920x/pexels-burst-544965.jpg" style="opacity: 0.75; filter: blur(1.5px);">
-              
-            <a href="" class="contact-btn" style="color: #F13943;">EMPRESA</a>
-        </div>
+          <div class="imageContact">
+              <img src="images/Aberturas/1920x/pexels-burst-544965.jpg" style="opacity: 0.75; filter: blur(1.5px);">
+                
+              <a href="" class="contact-btn" style="color: #F13943;">EMPRESA</a>
+          </div>
 
-        <div class="companyPresent">
-            <p class="primerTexto">
-                <span class="details">Somos una Pyme que lleva 20 años en el mercado</span> dando comienzo 
-                a una nueva Unidad de Negocios en el segmento de las aberturas.<br><br> 
-                Apuntando de esta manera la diversificación de productos.
-                Seguimos apostando a la inversión local, estando seguros en el desarrollo 
-                y fortalecimiento de la industria nacional.
-            </p>
-        </div>
-
+        <section class="scroll-container">
+          <div class="companyPresent scroll-element js-scroll fade-in-bottom">
+              <p class="primerTexto">
+                  <span class="details">Somos una Pyme que lleva 20 años en el mercado</span> dando comienzo 
+                  a una nueva Unidad de Negocios en el segmento de las aberturas.<br><br> 
+                  Apuntando de esta manera la diversificación de productos.
+                  Seguimos apostando a la inversión local, estando seguros en el desarrollo 
+                  y fortalecimiento de la industria nacional.
+              </p>
+          </div>
+        </section>
 
         <div class="logoDivisor">
             <div class="test-overlay"></div>
         </div>
 
-        <div class="rowCompany">
-            <div class="columnMission">
-                <p><span class="nuestraCompany">Nuestra</span><span class="misionCompany"> misión</span></p>
-                <div class="separator-Empresa"></div>
-                <i class="fas fa-crosshairs"></i>
+        <section class="scroll-container">
+          <div class="rowCompany">
+            <div class="columnMission scroll-element js-scroll fade-in-bottom">
+              <p><span class="nuestraCompany">Nuestra</span><span class="misionCompany"> misión</span></p>
+              <div class="separator-Empresa"></div>
+              <i class="fas fa-crosshairs"></i>
 
-                <p class="misionText">
-                    Aberturas Sarmiento tiene la misión de proveer aberturas  de mediana y alta prestación, 
-                    al segmento de la vivienda residencial y complejos habitaciones, 
-                    con un equipamiento de vanguardia y aportando valor en cada uno de los procesos, 
-                    a fin de obtener la satisfacción total de nuestros clientes.
-                </p>
+              <p class="misionText">
+                  Aberturas Sarmiento tiene la misión de proveer aberturas  de mediana y alta prestación, 
+                  al segmento de la vivienda residencial y complejos habitaciones, 
+                  con un equipamiento de vanguardia y aportando valor en cada uno de los procesos, 
+                  a fin de obtener la satisfacción total de nuestros clientes.
+              </p>
             </div>
-            <div class="columnVision">
-                <p><span class="nuestraCompany">Nuestra</span><span class="misionCompany"> visión</span></p>
-                <div class="separator-Empresa"></div>
-                <i class="fas fa-sort-amount-up"></i>
 
-                <p class="visionText">
-                    Nuestro propósito es posicionarnos en el segmento de los cerramientos
-                    como una propuesta de primera línea, que sea un facilitador de soluciones 
-                    integrales y con una excelente propuesta comercial.
-                </p>
+            <div class="columnVision scroll-element js-scroll fade-in-bottom">
+              <p><span class="nuestraCompany">Nuestra</span><span class="misionCompany"> visión</span></p>
+              <div class="separator-Empresa"></div>
+              <i class="fas fa-sort-amount-up"></i>
+
+              <p class="visionText">
+                  Nuestro propósito es posicionarnos en el segmento de los cerramientos
+                  como una propuesta de primera línea, que sea un facilitador de soluciones 
+                  integrales y con una excelente propuesta comercial.
+              </p>
             </div>
-        </div>
+          </div>
+        </section>
 
 
         <section class="footerLast">
             <div class="row-Footer">
       
-              <div class="column-Footer logoAS left">
+              <div class="column-Footer logoAS left scroll-element js-scroll slide-left">
                 <p class="footer-left-text">
                     Excelencia en <span class="footer-detail-text">aberturas.</span>
                 </p>
@@ -209,7 +216,52 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     
-        <script src="fourthFunction.js"></script>
+        <!--<script src="firstProject.js"></script>-->
 
+        </div>
+        <script>
+          var navbarHamburger = document.getElementById("navbarHamburger");
+    
+          function mostrarMenu(){
+              navbarHamburger.style.right = "0";
+          }
+    
+          function ocultarMenu(){
+              navbarHamburger.style.right = "-200px";
+          }
+        </script>
+        <script>
+          var myVar;
+    
+          function myFunction() {
+            myVar = setTimeout(showPage, 200);
+          }
+    
+          function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+          }
+        </script>
+        <!--
+        <script>
+          window.onscroll = function() {myFunction()};
+
+          var navbar = document.getElementById("navbar");
+          var sticky = navbar.offsetTop;
+
+          function myFunction() {
+          if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+          } else {
+              navbar.classList.remove("sticky");
+          }
+          }
+
+          jQuery(document).ready(function(){
+          jQuery("navbar").wrap('<div class="nav-placeholder"></div>');
+          jQuery(".nav-placeholder").height(jQuery("navbar").outerHeight());
+          });
+      </script>
+      -->
     </body>
 </html>

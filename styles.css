@@ -12,76 +12,70 @@ body{
 html{
 	scroll-behavior: smooth;
 }
-/*
-.img{
-	width: 100%;
-}
-/*
-@media only screen and (min-width: 768px){
-	.controlPaddingFooter{
-		width: 100%;
+
+@keyframes transitionIn{
+	from{
+		opacity: 0;
+		transform: rotateX(-10deg);
 	}
 
-	.img{
-		display: block;
-		width: 100%;
+	to{
+		opacity: 1;
+		transform: rotateX(0);
 	}
 }
-*/
 
+/*-------------------- preloader area --------------------*/
+/* Center the loader */
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	margin: -76px 0 0 -76px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #2e2e2e;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+	from { bottom:-100px; opacity:0 } 
+	to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+	from{ bottom:-100px; opacity:0 } 
+	to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+	display: none;
+  }
+/*--------------------- preloader area --------------------*/
 
-
-/* Media Queries: Tablet Landscape 
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
-
-/* Media Queries: Tabled Portrait 
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
-@media (min-device-width:600px) {
-    img[data-src-600px] {
-        content: attr(data-src-600px, url);
-    }
-}
-
-@media (min-device-width:800px) {
-    img[data-src-800px] {
-        content: attr(data-src-800px, url);
-    }
-}
-
-img { max-width: 100%; height: auto; }
-
-
-@media (min-width: 640px) { body {font-size:1rem;} } 
-/*@media (min-width:960px) { body {font-size:1.2rem;} } */
-/*@media (min-width:1100px) { body {font-size:1.5rem;} } */
-
-/*----------ISOTIPO DEL NAVBAR----------
-.iconMain{
-    max-height: 4.5rem !important;
-}
-
-/*----------LETRAS DEL LOGO DEL NAVBAR----------
-.iconMainLetras{
-	padding-top: 1rem;
-	max-height: 4rem !important;
-	padding-left: 0.5rem;
-}
-*/
-/*
-.firstControlPage{
-	overflow: auto;
-
-	position: fixed;
-	width: 100%;
-}
-*/
 /*----------ICONO DE LLAMADA DEL FOOTER----------*/
 .controlCall{
 	color: #363636 !important; 
@@ -149,16 +143,6 @@ img { max-width: 100%; height: auto; }
 	align-items: center;
 }
 
-.nav-placeholder{
-	margin: 0 0 0 0;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
 
 .iconMain{
 	min-height: 64px;
@@ -208,6 +192,17 @@ img { max-width: 100%; height: auto; }
 	display: none;
 }
 
+
+.nav-placeholder{
+	margin: 0 0 0 0;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 /*--------------------------PARTE DE RESPONSIVENESS------------------------------*/
 @media(max-width: 700px){
 
@@ -242,7 +237,6 @@ img { max-width: 100%; height: auto; }
 		color: #2e2e2e;
 		margin: 10px;
 		font-size: 22px;
-		text-align: left;
 	}
 
 	.navbar-end ul{
@@ -335,7 +329,7 @@ img { max-width: 100%; height: auto; }
 	.fa-arrow-up{
 		width:50px;
 		height:50px;
-		bottom:10px;
+		bottom:6px;
 		right: 80px;
 
 		border-radius:50px;
@@ -483,7 +477,7 @@ img{
 	border-right: .15em solid #F13943;
 	margin: 0 auto;
 	animation: 
-		typing 2s steps(550, end),
+		typing 1.5s steps(1000, end),
 		blink-caret .75s step-end infinite;
 		
 }
@@ -497,7 +491,14 @@ img{
 	from, to { border-color: transparent }
 	50% { border-color: #F13943; }
 }
-
+/*
+@media(max-width:700px){
+	.mySlides{
+		min-width: 150%; 
+	}
+}
+PRUEBA PARA AGRANDAR EL SLIDESHOW
+*/
 /*----------- LOS PUNTOS INDICADORES DE IMAGEN -----------*/
 .dot {
   cursor: pointer;
@@ -562,7 +563,7 @@ img{
 	float: left;
 	padding: 10px;
 	padding-bottom: 150px;
-}
+}	
 
 .row-One:after {
 	content: "";
@@ -683,7 +684,14 @@ one:last-of-type {
 		width: 100%;
 	}
 }
-
+/*
+@media(max-width:400px){
+	.subtitle.is-3.one{
+		font-size: 1.9rem;
+	}
+}
+PRUEBA PARA QUE SE VEAN MEJOR LOS TEXTOS EN LA RESPONSIVIDAD
+*/
 /*----------ACA EMPIEZA LA SEGUNDA COLUMNAA ----------*/
 .row-Two{
 	display: flex;
@@ -2049,6 +2057,7 @@ a:link{
 	}
 }
 
+
 @media(max-width:700px){
 	.text-A40{
 		padding: 0%;
@@ -2123,6 +2132,14 @@ a:link{
 	.column-Tipologias{
 		padding-bottom: 5%;
 	}
+
+	.row-containerLineaA40{
+		box-shadow: 0px 0px 0px;
+	}
+	
+	.principalText{
+		box-shadow: 0px 0px 0px;
+	}
 }
 
 @media(max-width:450px){
@@ -2177,6 +2194,32 @@ a:link{
 	}
 }
 
+.row-DVH{
+	box-shadow: 5px 10px 50px #F13943;
+	margin-top: 4%;
+}
+
+.column-DVH {
+	float: left;
+	padding: 10px;
+	padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .left-DVH {
+	width: 35%;
+  }
+  
+  .right-DVH {
+	width: 65%;
+  }
+  
+  /* Clear floats after the columns */
+  .row-DVH:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 /*-------------------------------ESTILOS DE EMPRESA.HTML-----------------------------------------*/
 .companyPresent{
 	background-color: rgba(241, 57, 67, 0.9);
