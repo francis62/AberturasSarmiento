@@ -25,6 +25,105 @@ html{
 	}
 }
 
+/*-------------------- scroll animations start --------------------*/
+
+.scroll-container:nth-of-type(even) {
+	flex-direction: row-reverse;
+  }
+  /*
+  @media screen and (max-width: 650px) {
+	.scroll-container,
+	.scroll-container:nth-of-type(even) {
+	  flex-direction: column;
+	  align-content: inherit;
+	}
+  
+	.scroll-element {
+	  height: 100%;
+	}
+  
+	.scroll-element,
+	.scroll-caption {
+	  width: 100%;
+	}
+  }
+  /**Styling scrollable elements*/
+  
+  .js-scroll {
+	opacity: 0;
+	transition: opacity 500ms;
+  }
+  
+  .js-scroll.scrolled {
+	opacity: 1;
+  }
+  
+  .scrolled.fade-in {
+	animation: fade-in 1s ease-in-out both;
+  }
+  
+  .scrolled.fade-in-bottom {
+	animation: fade-in-bottom 1s ease-in-out both;
+  }
+  
+  .scrolled.slide-left {
+	animation: slide-in-left 1s ease-in-out both;
+  }
+  
+  .scrolled.slide-right {
+	animation: slide-in-right 1s ease-in-out both;
+  }
+  
+  @keyframes slide-in-left {
+	0% {
+	  -webkit-transform: translateX(-100px);
+	  transform: translateX(-100px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes slide-in-right {
+	0% {
+	  -webkit-transform: translateX(100px);
+	  transform: translateX(100px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes fade-in-bottom {
+	0% {
+	  -webkit-transform: translateY(50px);
+	  transform: translateY(50px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-transform: translateY(0);
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+/*-------------------- scroll animations end --------------------*/
+
 /*-------------------- preloader area --------------------*/
 /* Center the loader */
 #loader {
@@ -243,6 +342,13 @@ html{
 		padding: 30px;
 	}
 
+}
+
+@media(max-width:500px){
+	.iconMain{
+		margin-top: 5%;
+		margin-bottom: 9%;
+	}
 }
 
 /*----------LAYOUT DEL TEXTO/BOTON HOME----------
@@ -533,6 +639,18 @@ PRUEBA PARA AGRANDAR EL SLIDESHOW
   to {opacity: 1}
 }
 
+
+.slideshowFirstImage{
+	width: 100%;
+}
+
+.slideshowSecondImage{
+	width: 100%;
+}
+
+.slideshowThirdImage{
+	width: 100%;
+}
 /*---------- EN PANTALLAS MAS CHICAS DISMINUIR EL TAMAÑO DEL TEXTO ----------*/
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -547,8 +665,34 @@ PRUEBA PARA AGRANDAR EL SLIDESHOW
 	.slideshow-container {
 		max-width: 700px;
 	}
+
+	.slideshowFirstImage, 
+	.slideshowSecondImage,
+	.slideshowThirdImage{
+		width: auto;
+    	height: 300px;
+    	object-fit: cover;
+	}
 }
 
+@media(max-width: 500px){
+	.textImage{
+		font-size: 18px;
+	}
+}
+
+
+@media(max-width: 300px){
+	.slideshowFirstImage, 
+	.slideshowSecondImage,
+	.slideshowThirdImage{
+		width: auto;
+    	height: 200px;
+    	object-fit: cover;
+	}
+	
+
+}
 
 /*-------------------FINISH SLIDESHOW-----------------*/
 
@@ -684,12 +828,18 @@ one:last-of-type {
 		width: 100%;
 	}
 }
-/*
-@media(max-width:400px){
+
+@media(max-width:500px){
 	.subtitle.is-3.one{
-		font-size: 1.9rem;
+		font-size: 1.6rem;
+	}
+
+	.subtitle.is-4.one{
+		font-size: 26px;
 	}
 }
+
+/*
 PRUEBA PARA QUE SE VEAN MEJOR LOS TEXTOS EN LA RESPONSIVIDAD
 */
 /*----------ACA EMPIEZA LA SEGUNDA COLUMNAA ----------*/
@@ -797,6 +947,15 @@ PRUEBA PARA QUE SE VEAN MEJOR LOS TEXTOS EN LA RESPONSIVIDAD
 	
 }
 
+@media(max-width:500px){
+	.subtitle.is-4.two{
+		font-size: 23px;
+	}
+
+	.subtitle.is-5.two{
+		font-size: 19px;
+	}
+}
 
 /*----------ACA EMPIEZA LA TERCER COLUMNA----------*/
 .row-Third{

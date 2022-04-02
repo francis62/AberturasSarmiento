@@ -103,7 +103,7 @@
   <div class="slideshow-container">
 
     <div class="mySlides fade">
-      <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-6527069 (1).jpg" style="width:100%">
+      <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-6527069 (1).jpg" class="slideshowFirstImage">
       <!--<p class="subtitle is-2 textImage">-->
       <p class="textImage">
         Excelencia en aberturas
@@ -111,14 +111,14 @@
     </div>
     
     <div class="mySlides fade">
-      <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-7061678.jpg" style="width:100%">
+      <img src="images/Aberturas/1920x700/pexels-max-vakhtbovych-7061678.jpg" class="slideshowSecondImage">
       <p class="textImage">
         Excelencia en aberturas
       </p>
     </div>
     
     <div class="mySlides fade">
-      <img src="images/Aberturas/1920x700/pexels-skylar-kang-6045336.jpg" style="width:100%">
+      <img src="images/Aberturas/1920x700/pexels-skylar-kang-6045336.jpg" class="slideshowThirdImage">
       <p class="textImage">
         Excelencia en aberturas
       </p>
@@ -477,6 +477,51 @@
         document.getElementById("myDiv").style.display = "block";
       }
     </script>
+
+    <!--------------- script for scroll animations start-------------->
+    <script>
+        const scrollElements = document.querySelectorAll(".js-scroll");
+
+        const elementInView = (el, dividend = 1) => {
+          const elementTop = el.getBoundingClientRect().top;
+
+          return (
+            elementTop <=
+            (window.innerHeight || document.documentElement.clientHeight) / dividend
+          );
+        };
+
+        const elementOutofView = (el) => {
+          const elementTop = el.getBoundingClientRect().top;
+
+          return (
+            elementTop > (window.innerHeight || document.documentElement.clientHeight)
+          );
+        };
+
+        const displayScrollElement = (element) => {
+          element.classList.add("scrolled");
+        };
+
+        const hideScrollElement = (element) => {
+          element.classList.remove("scrolled");
+        };
+
+        const handleScrollAnimation = () => {
+          scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+              displayScrollElement(el);
+            } else if (elementOutofView(el)) {
+              hideScrollElement(el)
+            }
+          })
+        }
+
+        window.addEventListener("scroll", () => { 
+          handleScrollAnimation();
+        });
+    </script>
+    <!--------------- script for scroll animations end---------------->
     <!--
 		<script>
       
