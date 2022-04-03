@@ -99,9 +99,11 @@
         </nav>
 
           <div class="imageContact">
-              <img src="images/Aberturas/1920x/pexels-burst-544965.jpg" style="opacity: 0.75; filter: blur(1.5px);">
+              <!--style="opacity: 0.75; filter: blur(1.5px);"-->
+              <img src="images/Aberturas/1920x/pexels-burst-544965.jpg" class="imageContactNotMobile" >
+              <img src="images/Aberturas/as new/pexels-burst-544965.jpg" class="imageContactMobile">
                 
-              <a href="" class="contact-btn" style="color: #F13943;">EMPRESA</a>
+              <div class="contact-btn" style="color: #2e2e2e;">EMPRESA</div>
           </div>
 
         <section class="scroll-container">
@@ -208,14 +210,15 @@
             </div>
           </section>
 
-        <a href="#firstSection">
-          <i class="fas fa-arrow-up"></i>
-        </a>
+          <a onclick="topFunction()" id="goToTopButton" class="back-to-top">
+            <i class="fa fa-chevron-up"></i>
+          </a>
 
         <a href="https://wa.me/5492617501072?text=Hola%20Aberturas%20Sarmiento,%20estoy%20interesado%20en%20realizar%20unas%20aberturas%20con%20ustedes." class="float" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-    
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <!--<script src="firstProject.js"></script>-->
 
         </div>
@@ -286,6 +289,31 @@
             handleScrollAnimation();
           });
         </script>
+
+        <script>
+          //Get the button
+          var mybutton = document.getElementById("goToTopButton");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              $("#goToTopButton").fadeIn("slow");
+              mybutton.style.display = "block";
+            } else {
+              $("#goToTopButton").fadeOut("slow");
+              /*mybutton.style.display = "none";*/
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        </script>
+        
         <!--------------- script for scroll animations end---------------->        
         <!--
         <script>

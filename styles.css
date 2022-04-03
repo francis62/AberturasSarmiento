@@ -384,23 +384,83 @@ html{
 */
 
 /*--------LAYOUR DEL BOTON PARA ARRIBA------------*/
-.fa-arrow-up{
-	position: fixed;
-	width:50px;
-	height:50px;
-	bottom:45px;
-	right: 120px;
-	background-color: #2e2e2e;
-	color:white;
+.back-to-top{
 	border-radius:50px;
-	text-align: center;
-    font-size: 40px;
-	box-shadow: 2px 2px 3px #2e2e2e;
-    z-index: 50;
-	padding-top: 5px;
+    position: fixed;
+    display: none;
+    background: #f13943;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    bottom:13px;
+	right:70px;
+    transition: background 0.5s;
+    z-index: 500;
 }
 
+.back-to-top i {
+    color: white;
+    padding-top: 10px;
+}
+
+.back-to-top:hover {
+    background: #2e2e2e;
+}
+
+.back-to-top:hover i {
+    color: #f13943;
+}
+
+/*
+.fa-chevron-up{
+	border-radius:50px;
+	position: fixed;
+	display: none;
+	background-color: #2e2e2e;
+	background-color: #f13943;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 1;
+	font-size: 22px;
+	bottom:45px;
+	right: 120px;
+	transition: background 0.5s;
+	z-index: 50;
+
+	box-shadow: 2px 2px 3px #2e2e2e;
+	padding-top: 5px;
+}*/
+
 /*----------LAYOUT DEL BOTON DE WHATSAPP----------*/
+.float{
+	position: fixed;
+	width:48px !important;
+	height:48px !important;
+	right: 15px;
+    bottom: 15px;
+	background-color: #25d366;
+	color:#FFF !important;
+	border-radius:30px !important;
+	text-align: center;
+    font-size: 32px !important;
+	/*box-shadow: 2px 2px 3px #2e2e2e;*/
+    z-index: 100;
+
+	transition: color 0.5s linear; /* vendorless fallback */
+    -o-transition: color 0.5s linear; /* opera */
+    -ms-transition: color 0.5s linear; /* IE 10 */
+    -moz-transition: color 0.5s linear; /* Firefox */
+    -webkit-transition: color 0.5s linear; /*safari and chrome */
+}
+
+.float:hover{
+	transition: 1s;
+	color: #2e2e2e !important;
+}
+/*
 .float{
 	position: fixed;
 	width:60px;
@@ -414,8 +474,8 @@ html{
     font-size: 37px;
 	box-shadow: 2px 2px 3px #2e2e2e;
     z-index: 100;
-}
-
+}*/
+/*
 @media(max-width:1440px){
 	.float{
 		bottom: 1%;
@@ -432,7 +492,7 @@ html{
 	height:50px;
 	}
 
-	.fa-arrow-up{
+	.fa-chevron-up{
 		width:50px;
 		height:50px;
 		bottom:6px;
@@ -455,7 +515,7 @@ html{
 		right: 2%;
 	}
 
-	.fa-arrow-up{
+	.fa-chevron-up{
 		visibility: hidden;
 		clear: both;
 		display: none;
@@ -472,7 +532,7 @@ html{
 		text-align: center;
 	}
 }
-
+*/
 /*-------------------START slideshow firstOne------------------------------*/
 /*
 .image-slideshow {
@@ -677,7 +737,14 @@ PRUEBA PARA AGRANDAR EL SLIDESHOW
 
 @media(max-width: 500px){
 	.textImage{
-		font-size: 18px;
+		font-size: 20px;
+	}
+
+	.slideshowFirstImage, 
+	.slideshowSecondImage,
+	.slideshowThirdImage{
+		width: auto;
+    	height: 450px;
 	}
 }
 
@@ -1592,48 +1659,63 @@ a:visited {
 /*-------------------------------ESTILOS DE CONTACT.HTML-----------------------------------------*/
 .imageContact{
 	position: relative;
+	text-align: center !important;
+}
+
+.imageContactNotMobile{
+	opacity: 0.75; 
+	filter: blur(1.5px);
+	display: block;
+}
+
+.imageContactMobile{
+	display: none;
+}
+
+.imageProductNotMobile{
+	opacity: 0.75; 
+	filter: blur(1.5px);
+	display: block;
+}
+
+.imageProductMobile{
+	display: none;
 }
 
 .contact-btn{
-	display: inline-block;
-	text-decoration: none;
-	border: 1px solid black;
-	text-align: center;
-	left: 43%;
-	top: 40%;
-	padding: 12px 34px;
-	font-size: 45px;
-	background: black;
-	opacity: 0.85;
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 45px;
+	opacity: 0.95;
+	padding: 12px 34px;
+	background-color: rgba(241, 57, 67, 0.9);
+	box-shadow: 15px 20px #2e2e2e;
 }
 
 .contact-btn.producto{
-	left: 41%;
-	display: inline-block;
-	text-decoration: none;
-	border: 1px solid black;
-	text-align: center;
-	top: 40%;
-	padding: 12px 34px;
-	font-size: 45px;
-	background: black;
-	opacity: 0.85;
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 45px;
+	opacity: 0.95;
+	padding: 12px 34px;
+	background-color: rgba(241, 57, 67, 0.9);
+	box-shadow: 15px 20px #2e2e2e;
 }
 
 .contact-btn.contacto{
-	left: 39.5%;
-	display: inline-block;
-	text-decoration: none;
-	border: 1px solid black;
-	text-align: center;
-	top: 40%;
-	padding: 12px 34px;
-	font-size: 45px;
-	background: black;
-	opacity: 0.85;
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 45px;
+	opacity: 0.95;
+	padding: 12px 34px;
+	background-color: rgba(241, 57, 67, 0.9);
+	box-shadow: 15px 20px #2e2e2e;
 }
 
 .row-Contact{
@@ -1698,19 +1780,6 @@ a:visited {
 
 
 @media(max-width:1366px){
-	.contact-btn{
-		left: 42%;
-		top: 37%;
-	}
-
-	.contact-btn.contacto{
-		left: 38%;
-	}
-
-	.contact-btn.producto{
-		left: 41%;
-	}
-
 	.titlesContact{
 		font-size: 20px;
 	}
@@ -1732,62 +1801,70 @@ a:visited {
 
 @media(max-width:1024px){
 	.contact-btn{
-		top: 35%;
-		left: 41% !important;
 		font-size: 35px;
 	}
 
 	.contact-btn.producto{
-		top: 35%;
-		left: 39% !important;
 		font-size: 35px;
 	}
 
 	.contact-btn.contacto{
-		top: 35%;
-		left: 38% !important;
 		font-size: 35px;
 	}
 }
 
 @media(max-width:800px){
 	.contact-btn{
-		top: 30%;
-		left: 40% !important;
 		font-size: 25px;
 	}
 }
 
-@media(max-width:450px){
-	.contact-btn{
-		left: 41% !important;
+@media(max-width:500px){
+	.imageContact img{
+		width: auto;
+		height: 400px;
+		object-fit: cover;
 	}
 
+	.imageContactNotMobile{
+		display: none;
+	}
+
+	.imageContactMobile{
+		display: block;
+		opacity: 0.75; 
+		filter: blur(1.5px);
+	}
+
+	.imageProductNotMobile{
+		display: none;
+	}
+
+	.imageProductMobile{
+		display: block;
+		opacity: 0.75; 
+		filter: blur(1.5px);
+	}
+
+	.contact-btn{
+		font-size: 30px;
+	}
+
+	.contact-btn.contacto{
+		font-size: 30px;
+	}
+
+	.contact-btn.producto{
+		font-size: 30px;
+	}
+}
+
+@media(max-width:450px){
 	.icon-group{
 		font-size: 70px;
 	}
 }
 
-@media(max-width:400px){
-	.contact-btn{
-		left: 39% !important;
-	}
-
-	.contact-btn.contacto{
-		left: 35% !important;
-	}
-}
-
-@media(max-width:350px){
-	.contact-btn{
-		left: 38% !important;
-	}
-/*
-	.contact-btn.producto{
-		left: ;
-	}
-	*/
-}
 
 .right-Contact{
 	width: 80%;
@@ -1897,27 +1974,6 @@ a:visited {
 
 
 @media(max-width:700px){
-	.contact-btn{
-		left: 35%;
-		top: 35%;
-		padding: 3px 8px;
-		font-size: 15px;
-	}
-
-	.contact-btn.contacto{
-		left: 35%;
-		top: 35%;
-		padding: 3px 8px;
-		font-size: 15px;
-	}
-
-	.contact-btn.producto{
-		left: 30%;
-		top: 35%;
-		padding: 3px 8px;
-		font-size: 15px;
-	}
-
 	.row-Contact{
 		flex-direction: column;
 	}
@@ -1961,6 +2017,7 @@ a:visited {
 
 	
 }
+
 
 a:link{
 	color: #2e2e2e;
@@ -2356,6 +2413,8 @@ a:link{
 .row-DVH{
 	box-shadow: 5px 10px 50px #F13943;
 	margin-top: 4%;
+	display: flex;
+
 }
 
 .column-DVH {
@@ -2379,6 +2438,21 @@ a:link{
 	display: table;
 	clear: both;
   }
+
+.imageDVH{
+	max-width: 90%;
+}
+
+@media(max-width:500px){
+	.row-DVH{
+		flex-direction: column;
+	}
+
+	.column-DVH{
+		width: 100%;
+	}
+}
+
 /*-------------------------------ESTILOS DE EMPRESA.HTML-----------------------------------------*/
 .companyPresent{
 	background-color: rgba(241, 57, 67, 0.9);
